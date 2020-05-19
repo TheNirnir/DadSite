@@ -1,0 +1,28 @@
+body {
+	/*background-image: linear-gradient(#8ba8b7, #bdcdd6);*/
+/*	background-image: linear-gradient(#8ba8b7, #fff);
+	background-attachment: fixed;*/
+}
+
+#header-container {
+	text-align: center;
+	background-color: #8ba8b7;
+	font-weight: bold;
+}
+
+#main-content {
+	padding-top: 15px;
+	background-image: linear-gradient(#8ba8b7, #fff);
+	height: 300px;
+}
+
+footer {
+	text-align: center;
+	background-color: #fff;
+	padding: 15px 5px 10px;
+}
+
+.navbar {
+	border: none;
+	margin-bottom: 0;
+}
