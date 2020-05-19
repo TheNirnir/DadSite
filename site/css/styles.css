@@ -123,7 +123,7 @@ h2 {
 }
 
 #Supervision-list li {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 1.1em;
 	position: relative;
@@ -148,4 +148,16 @@ footer {
 
 footer div {
 	font-size: 0.9em;
+}
+
+@media (min-width: 442px) and (max-width: 767px) {
+	#Supervision-list li {
+		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 441px) {
+	#Supervision-list li {
+		margin-bottom: 50px;
+	}
 }
