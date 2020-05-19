@@ -7,6 +7,7 @@
 	<title>Rami's site</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
@@ -18,7 +19,18 @@
 		<nav class="navbar navbar-default">
 		<div class="container">
 			<div id="header-container" class="navbar-header">
-				<h1>Rami Ben-Ari</h1>
+				<div id="header-row" class="row">
+					<!-- <img src="" width="80px" height="80px"> -->
+					<h1>Rami Ben-Ari</h1>
+					<ul id="menu-bar">
+						<li><a href="#">Publications</a></li>
+						<li><a href="#">CV</a></li>
+						<li id="Home-option" onclick="pageTransformation('Home')"><a href="#">Home</a></li>
+						<li id="Home-option-place-holder"></li>
+						<li onclick="pageTransformation('Supervision')"><a href="#">Supervision</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -29,7 +41,7 @@
 	<footer>
 		<div class="container">
 			<div><span>&copy;</span> copyright 2020 Rami Ben&#8209;Ari all&nbsp;rights&nbsp;reserved</div>
-			<div>created by Nir Ben&#8209;Ari</div>
+			<div>Created by Nir Ben&#8209;Ari</div>
 		</div>
 	</footer>
 </body>
