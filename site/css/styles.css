@@ -4,10 +4,9 @@ body {
 	background-attachment: fixed;*/
 }
 
-#header-container {
+.navbar {
 	text-align: center;
 	background-color: #8ba8b7;
-	font-weight: bold;
 }
 
 #main-content {
