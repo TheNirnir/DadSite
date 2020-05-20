@@ -88,12 +88,12 @@ ul#menu-bar {
 	padding-left: 27px
 }
 
-#menu-bar li:hover, #menu-bar li:active, #menu-bar li.page-on {
+#menu-bar li.options:hover, #menu-bar li.options:active, #menu-bar li.page-on {
 	background-color: #000;
 	cursor: pointer;
 }
 
-#menu-bar li:hover a, #menu-bar li:active a, #menu-bar li.page-on a {
+#menu-bar li.options:hover a, #menu-bar li.options:active a, #menu-bar li.page-on a {
 	color: #fff;
 	text-decoration-line: none;
 }
@@ -166,7 +166,7 @@ footer div {
 	}
 }
 
-@media (max-width: 560px) {
+@media (min-width: 426px) and (max-width: 560px) {
 	ul#menu-bar {
 		font-size: 1.2em;
 	}
@@ -187,7 +187,7 @@ footer div {
 	}
 }
 
-@media (max-width: 425px) {
+@media (min-width: 371px) and (max-width: 425px) {
 	ul#menu-bar {
 		font-size: 1em;
 	}
@@ -208,7 +208,7 @@ footer div {
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 370px) {
 	ul#menu-bar {
 		font-size: 0.8em;
 	}
