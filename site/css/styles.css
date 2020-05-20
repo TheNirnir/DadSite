@@ -166,3 +166,66 @@ footer div {
 		margin-bottom: 50px;
 	}
 }
+
+@media (max-width: 560px) {
+	ul#menu-bar {
+		font-size: 1.2em;
+	}
+	#menu-bar li, #menu-bar li:visited {
+		padding: 0 5px;
+	}
+	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
+		height: 50px;
+	}
+	#menu-bar #Home-option-place-holder {
+		padding: 0 37px 0 56px;
+	}
+	#menu-bar #Supervision-option-place-holder {
+		padding-left: 19px
+	}
+	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
+		padding: 0 2.5px;
+	}
+}
+
+@media (max-width: 425px) {
+	ul#menu-bar {
+		font-size: 1em;
+	}
+	#menu-bar li, #menu-bar li:visited {
+		padding: 0 5px;
+	}
+	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
+		height: 45px;
+	}
+	#menu-bar #Home-option-place-holder {
+		padding: 0 32px 0 49px;
+	}
+	#menu-bar #Supervision-option-place-holder {
+		padding-left: 17px
+	}
+	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
+		padding: 0 2.5px;
+	}
+}
+
+@media (max-width: 425px) {
+	ul#menu-bar {
+		font-size: 0.8em;
+	}
+	#menu-bar li, #menu-bar li:visited {
+		padding: 0 5px;
+	}
+	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
+		height: 35px;
+	}
+	#menu-bar #Home-option-place-holder {
+		padding: 0 27px 0 41px;
+	}
+	#menu-bar #Supervision-option-place-holder {
+		padding-left: 14px
+	}
+	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
+		padding: 0 2.5px;
+	}
+}
