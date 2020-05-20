@@ -7,4 +7,6 @@ function pageTransformation (pageName) {
 			document.querySelector("#main-content").innerHTML = responseText;
 		},
 		false);
+	document.querySelector(".page-on").className = "";
+	document.querySelector("#" + pageName + "-option").className = "page-on";
 }
