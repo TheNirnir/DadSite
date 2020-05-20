@@ -42,7 +42,6 @@ h1 {
 ul#menu-bar {
 	/*float: right;*/
 	width: fit-content;
-	height: 60px;
 	list-style-type: none;
 	padding: 0 10px;
 	height: auto;
