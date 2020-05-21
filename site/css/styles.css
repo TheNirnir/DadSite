@@ -44,7 +44,7 @@ ul#menu-bar {
 	width: fit-content;
 	list-style-type: none;
 	padding: 0 10px;
-	height: auto;
+	height: fit-content;
 	background-color: #fff;
 	border-radius: 10px;
 	position: relative;
