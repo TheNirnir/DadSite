@@ -86,6 +86,7 @@ ul#menu-bar {
 
 #menu-bar #Supervision-option-place-holder {
 	padding-left: 27px
+	padding-right: 0;
 }
 
 #menu-bar li.options:hover, #menu-bar li.options:active, #menu-bar li.page-on {
@@ -168,28 +169,7 @@ footer div {
 
 @media (min-width: 426px) and (max-width: 560px) {
 	ul#menu-bar {
-		font-size: 1.2em;
-	}
-	#menu-bar li, #menu-bar li:visited {
-		padding: 0 5px;
-	}
-	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
-		height: 50px;
-	}
-	#menu-bar #Home-option-place-holder {
-		padding: 0 37px 0 56px;
-	}
-	#menu-bar #Supervision-option-place-holder {
-		padding-left: 19px
-	}
-	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
-		padding: 0 2.5px;
-	}
-}
-
-@media (min-width: 371px) and (max-width: 425px) {
-	ul#menu-bar {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 	#menu-bar li, #menu-bar li:visited {
 		padding: 0 5px;
@@ -198,7 +178,7 @@ footer div {
 		height: 45px;
 	}
 	#menu-bar #Home-option-place-holder {
-		padding: 0 32px 0 49px;
+		padding: 0 35px 0 52px;
 	}
 	#menu-bar #Supervision-option-place-holder {
 		padding-left: 17px
@@ -208,21 +188,42 @@ footer div {
 	}
 }
 
-@media (min-width: 321px) and (max-width: 370px) {
+@media (min-width: 371px) and (max-width: 425px) {
 	ul#menu-bar {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 	#menu-bar li, #menu-bar li:visited {
 		padding: 0 5px;
 	}
 	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
-		height: 35px;
+		height: 40px;
 	}
 	#menu-bar #Home-option-place-holder {
-		padding: 0 27px 0 41px;
+		padding: 0 28.5px 0 44px;
 	}
 	#menu-bar #Supervision-option-place-holder {
-		padding-left: 14px
+		padding-left: 15.5px
+	}
+	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
+		padding: 0 2.5px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 370px) {
+	ul#menu-bar {
+		font-size: 0.7em;
+	}
+	#menu-bar li, #menu-bar li:visited {
+		padding: 0 5px;
+	}
+	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
+		height: 32px;
+	}
+	#menu-bar #Home-option-place-holder {
+		padding: 0 24px 0 37px;
+	}
+	#menu-bar #Supervision-option-place-holder {
+		padding-left: 13px
 	}
 	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
 		padding: 0 2.5px;
