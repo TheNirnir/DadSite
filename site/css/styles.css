@@ -182,7 +182,7 @@ footer div {
 		padding: 0 20px 0 31px;
 	}
 	#menu-bar #Supervision-option-place-holder {
-		padding-left: 11px
+		padding: 0 0 0 11px
 	}
 	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
 		padding: 0 2.5px;
