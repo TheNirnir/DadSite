@@ -41,7 +41,7 @@ h1 {
 
 ul#menu-bar {
 	/*float: right;*/
-	width: fit-content;
+	width: 509px;
 	list-style-type: none;
 	padding: 0 10px;
 	height: fit-content;
@@ -170,6 +170,7 @@ footer div {
 
 @media (max-width: 768px) {
 	ul#menu-bar {
+		width: 217px;
 		font-size: 0.55em;
 	}
 	#menu-bar li, #menu-bar li:visited {
