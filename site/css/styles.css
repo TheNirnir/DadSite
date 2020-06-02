@@ -190,7 +190,7 @@ footer div {
 	}
 }*/
 
-@media (min-width: 410px) and (max-width: 550px) {
+@media (min-width: 420px) and (max-width: 560px) {
 	ul#menu-bar {
 		width: 368.5px;
 		font-size: 1.1em;
@@ -212,7 +212,7 @@ footer div {
 	}
 }
 
-@media (min-width: 355px) and (max-width: 409px) {
+@media (min-width: 365px) and (max-width: 419px) {
 	ul#menu-bar {
 		width: 314.5px;
 		font-size: 0.9em;
@@ -234,7 +234,7 @@ footer div {
 	}
 }
 
-@media (min-width: 305px) and (max-width: 354px) {
+@media (min-width: 315px) and (max-width: 364px) {
 	ul#menu-bar {
 		width: 262.5px;
 		font-size: 0.7em;
@@ -256,7 +256,7 @@ footer div {
 	}
 }
 
-@media (max-width: 304px) {
+@media (max-width: 314px) {
 	ul#menu-bar {
 		width: 217px;
 		font-size: 0.55em;
