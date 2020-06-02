@@ -145,6 +145,13 @@ h2 {
 }
 /*****end Supervision page*****/
 
+/*****CV page*****/
+#pdf-cv {
+	width: fit-content;
+	margin: 0 auto;
+}
+/*****end CV page*****/
+
 footer {
 	text-align: center;
 	background-color: #fff;
