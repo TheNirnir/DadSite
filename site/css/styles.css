@@ -66,10 +66,11 @@ ul#menu-bar {
 
 #menu-bar li#Home-option, #menu-bar li#Home-option:visited {
 	background-color: #000;
-	border-radius: 8px;
+	border-radius: 15px;
 	position: absolute;
 	height: 55px;
 	bottom: 0;
+	left: 209px;
 }
 
 #menu-bar li#Home-option a, #menu-bar li#Home-option a:visited {
@@ -81,7 +82,7 @@ ul#menu-bar {
 }
 
 #menu-bar #Home-option-place-holder {
-	padding: 0 53px 0 70px;
+	padding: 0 48px 0 75px;
 }
 
 #menu-bar #Supervision-option-place-holder {
@@ -121,6 +122,50 @@ h2 {
 }
 /*****end General main-content*****/
 
+/*****Home page*****/
+#home-img-container img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+#home-img-container h2, #home-img-container div {
+	text-align: left;
+	margin: 0 0 10px;
+}
+
+#home-img-container h2 {
+	font-weight: 700;
+	font-size: 1.8em;
+}
+
+#home-img-container div {
+	font-size: 1.4em;
+}
+
+#home-text-container {
+	font-size: 1.4em;
+	line-height: 1.5;
+	padding: 0 35px; 
+}
+
+#home-text-container a:link, #home-text-container a:visited {
+	font-size: 1.4em;
+	text-decoration-line: none;
+	/*color: #000066;*/
+	color: #005c99;
+}
+
+#home-text-container a:hover, #home-text-container a:active {
+	text-decoration-line: none;
+	color: #33adff;
+}
+
+#pointing-row {
+	margin: 15px 0;
+}
+/*****end Home page*****/
+
 /*****Supervision page*****/
 #Supervision-list {
 	list-style-image: url(../images/person-icon.png);
@@ -140,7 +185,7 @@ h2 {
 }
 
 #Supervision-list li p span {
-	font-weight: 100;
+	font-weight: 500;
 	font-size: 1em;
 }
 /*****end Supervision page*****/
