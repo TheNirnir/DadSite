@@ -208,7 +208,13 @@ footer div {
 }
 
 /****************media queries********************/
-@media (max-width: 767px) {
+@media (max-width: 556px) {
+	#home-img-container {
+		width: 100%;
+	}
+	#home-text-container {
+		width: 100%;
+	}
 	#home-img-container img {
 		margin-bottom: 15px;
 	}
