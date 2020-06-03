@@ -252,6 +252,7 @@ footer div {
 	}
 	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
 		height: 45px;
+		left: 148px;
 	}
 	#menu-bar #Home-option-place-holder {
 		padding: 0 35px 0 52px;
@@ -274,6 +275,7 @@ footer div {
 	}
 	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
 		height: 40px;
+		left: 127px;
 	}
 	#menu-bar #Home-option-place-holder {
 		padding: 0 28.5px 0 44px;
@@ -296,6 +298,8 @@ footer div {
 	}
 	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
 		height: 32px;
+		left: 107px;
+		border-radius: 12px;
 	}
 	#menu-bar #Home-option-place-holder {
 		padding: 0 24px 0 37px;
@@ -318,6 +322,8 @@ footer div {
 	}
 	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
 		height: 25px;
+		left: 91px;
+		border-radius: 10px;
 	}
 	#menu-bar #Home-option-place-holder {
 		padding: 0 20px 0 31px;
