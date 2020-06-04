@@ -123,6 +123,17 @@ h2 {
 /*****end General main-content*****/
 
 /*****Home page*****/
+#home-container a:link, #home-container a:visited {
+	text-decoration-line: none;
+	color: #005c99;
+}
+
+#home-container a:hover, #home-container a:active {
+	text-decoration-line: none;
+	/*color: #33adff;*/
+	color: #00a7a7;
+}
+
 #home-img-container img {
 	width: 100%;
 	height: auto;
@@ -150,19 +161,46 @@ h2 {
 }
 
 #home-text-container a:link, #home-text-container a:visited {
-	font-size: 1.4em;
-	text-decoration-line: none;
+	font-size: 1.3em;
 	/*color: #000066;*/
-	color: #005c99;
-}
-
-#home-text-container a:hover, #home-text-container a:active {
-	text-decoration-line: none;
-	color: #33adff;
 }
 
 #pointing-row {
 	margin: 15px 0;
+}
+
+#home-first-row {
+	margin-bottom: 20px;
+}
+
+#news-container {
+	margin-bottom: 15px;
+}
+
+#news-content {
+	/*background-color: #ccc;*/
+	background-image: linear-gradient(#8ba8b7, #fff);
+	height: 350px;
+	border-radius: 15px;
+	border: 3px solid #000;
+	text-align: center;
+}
+
+#news-content h3 {
+	margin: 5px 0;
+	color: #000;
+	font-weight: 600;
+}
+
+#home-other-container {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+#home-other-container>ul {
+	margin-bottom: 15px;
+	font-size: 0.9em;
+	font-weight: 300;
 }
 /*****end Home page*****/
 
