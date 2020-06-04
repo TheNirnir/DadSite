@@ -63,21 +63,10 @@ var newsArray =[
 
 var NewsHTML = "snippets/News-list-snippet.html";
 var newsInterval;
+var i = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	pageTransformation('Home');
-	var i = 0;
-	var newsOrder = newsOrderFunction(i);
-	buildAndShowNews(newsArray, newsOrder);
-	newsInterval = setInterval(function () {
-		var newsOrder = newsOrderFunction(i);
-		// console.log(newsOrder);
-		buildAndShowNews(newsArray, newsOrder);
-		i++;
-		if (i == newsArray.length) {
-			i = 0;
-		}
-	}, 3000)
 });
 
 function pageTransformation (pageName) {
@@ -88,6 +77,20 @@ function pageTransformation (pageName) {
 		false);
 	document.querySelector(".page-on").className = "";
 	document.querySelector("#" + pageName + "-option").className = "page-on";
+	if (pageName == "Home") {
+		i = 0;
+		var newsOrder = newsOrderFunction(i);
+		buildAndShowNews(newsArray, newsOrder);
+		newsInterval = setInterval(function () {
+			var newsOrder = newsOrderFunction(i);
+			// console.log(newsOrder);
+			buildAndShowNews(newsArray, newsOrder);
+			i++;
+			if (i == newsArray.length) {
+				i = 0;
+			}
+		}, 3000)
+	}
 }
 
 function newsOrderFunction (i) {
