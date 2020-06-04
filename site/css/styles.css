@@ -138,6 +138,8 @@ h2 {
 	width: 100%;
 	height: auto;
 	margin: 0;
+	border-radius: 15px;
+	box-shadow: 0 0 20px #000;
 }
 
 #home-img-container h2, #home-img-container div {
@@ -200,7 +202,7 @@ h2 {
 }
 
 #news-content ul li {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 #news-content ul li span {
