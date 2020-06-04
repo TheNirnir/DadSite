@@ -62,13 +62,14 @@ var newsArray =[
 ]
 
 var NewsHTML = "snippets/News-list-snippet.html";
+var newsInterval;
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	pageTransformation('Home');
 	var i = 0;
 	var newsOrder = newsOrderFunction(i);
 	buildAndShowNews(newsArray, newsOrder);
-	setInterval(function () {
+	newsInterval = setInterval(function () {
 		var newsOrder = newsOrderFunction(i);
 		// console.log(newsOrder);
 		buildAndShowNews(newsArray, newsOrder);
@@ -80,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 function pageTransformation (pageName) {
+	clearInterval(newsInterval);
 	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
 			document.querySelector("#main-content").innerHTML = responseText;
 		},
