@@ -180,7 +180,7 @@ h2 {
 #news-content {
 	/*background-color: #ccc;*/
 	background-image: linear-gradient(#8ba8b7, #fff);
-	height: 350px;
+	height: 470px;
 	border-radius: 15px;
 	border: 3px solid #000;
 	text-align: center;
@@ -190,6 +190,23 @@ h2 {
 	margin: 5px 0;
 	color: #000;
 	font-weight: 600;
+}
+
+#news-content ul {
+	list-style-type: none;
+	padding: 0 25px;
+	font-size: 1.3em;
+	text-align: left;
+}
+
+#news-content ul li {
+	margin-bottom: 15px;
+}
+
+#news-content ul li span {
+	font-size: 1.2em;
+	font-weight: 600;
+	padding-right: 8px;
 }
 
 #home-other-container {
@@ -202,6 +219,18 @@ h2 {
 	font-size: 0.9em;
 	font-weight: 300;
 }
+
+#home-other-container ul li {
+	margin: 10px 0;
+}
+
+/*#home-other-container>ul {
+	list-style-type: none;
+}
+
+#home-other-container>ul>li {
+	margin-bottom: 10px; 
+}*/
 /*****end Home page*****/
 
 /*****Supervision page*****/
