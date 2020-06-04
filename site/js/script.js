@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		if (i == newsArray.length - 3) {
 			i = 0;
 		}
-	}, 3500)
+	}, 3000)
 });
 
 function pageTransformation (pageName) {
@@ -90,13 +90,24 @@ function buildNewsViewHTML(newsArray, NewsHTML, i) {
 	var finalHtml = "";
 
 	var max = i+4;
-	for (var i = i; i < max;) {
+	var j;
+
+	console.log("i:" + i);
+
+	for (var k = i; k < max;) {
+		console.log("k:" + k);
+		// if (k >= newsArray.length) {
+		// 	j = i;
+		// 	console.log("j:" + j);
+		// 	k = j - newsArray.length;
+		// 	console.log("k:" + k);
+		// }
 		var html = NewsHTML;
-		var number = i+1;
-		var startContent = newsArray[i].startContent;
-		var linkTo = newsArray[i].linkTo;
-		var linkName = newsArray[i].linkName;
-		var continueContent = newsArray[i].continueContent;
+		var number = k+1;
+		var startContent = newsArray[k].startContent;
+		var linkTo = newsArray[k].linkTo;
+		var linkName = newsArray[k].linkName;
+		var continueContent = newsArray[k].continueContent;
 
 		html = insertProperty(html, "number", number);
 		html = insertProperty(html, "startContent", startContent);
@@ -105,7 +116,8 @@ function buildNewsViewHTML(newsArray, NewsHTML, i) {
 		html = insertProperty(html, "continueContent", continueContent);
 		finalHtml += html;
 
-		i++;
+		// k = j;
+		k++;
 	}
 
 	return finalHtml;
