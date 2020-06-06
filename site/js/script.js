@@ -283,21 +283,32 @@ function pageTransformation (pageName) {
 	document.querySelector("#" + pageName + "-option").className = "page-on";
 	if (pageName == "Home") {
 		i = 0;
-		var newsOrder = newsOrderFunction(i);
-		buildAndShowNews(newsArray, newsOrder);
-		newsInterval = setInterval(function () {
-			var newsOrder = newsOrderFunction(i);
-			// console.log(newsOrder);
-			buildAndShowNews(newsArray, newsOrder);
-			i++;
-			if (i == newsArray.length) {
-				i = 0;
-			}
-		}, 3000)
+		waitForNewsToDisplay("#news-list", 100, newsArray);
+		function waitForNewsToDisplay(selector, time, newsArray) {
+	        if(document.querySelector(selector)!=null) {
+	        	var newsOrder = newsOrderFunction(i);
+				buildAndShowNews(newsArray, newsOrder);
+				newsInterval = setInterval(function () {
+					var newsOrder = newsOrderFunction(i);
+					// console.log(newsOrder);
+					buildAndShowNews(newsArray, newsOrder);
+					i++;
+					if (i == newsArray.length) {
+						i = 0;
+					}
+				}, 3000)
+	            return;
+	        }
+	        else {
+	            setTimeout(function() {
+	                waitForNewsToDisplay(selector, time, newsArray);
+	            }, time);
+	        }
+	    }
 	}
 
 	if (pageName == "Publications") {
-		buildAndShowPublication(publicationsArray);
+	    buildAndShowPublication(publicationsArray);
 	}
 }
 
