@@ -287,11 +287,20 @@ a:hover, a:active {
 }
 
 #publication-start-row {
-	margin: 20px 0 10px;
+	margin: 25px 0 10px;
+}
+
+#publication-title {
+	margin-top: 2px;
 }
 
 #publication-container a {
 	font-size: 1.3em;
+}
+
+#publication-achievement {
+	font-weight: 600;
+	color: #009933;
 }
 
 #publication-content-row {
