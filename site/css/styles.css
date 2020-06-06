@@ -118,21 +118,30 @@ ul#menu-bar {
 
 h2 {
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
+}
+
+a:link, a:visited {
+	text-decoration-line: none;
+	color: #005c99;
+}
+
+a:hover, a:active {
+	text-decoration-line: none;
+	/*color: #33adff;*/
+	color: #00a7a7;
 }
 /*****end General main-content*****/
 
 /*****Home page*****/
-#home-container a:link, #home-container a:visited {
+/*#home-container a:link, #home-container a:visited {
 	text-decoration-line: none;
 	color: #005c99;
 }
 
 #home-container a:hover, #home-container a:active {
 	text-decoration-line: none;
-	/*color: #33adff;*/
-	color: #00a7a7;
-}
+}*/
 
 #home-img-container img {
 	width: 100%;
@@ -267,6 +276,52 @@ h2 {
 }*/
 /*****end CV page*****/
 
+/*****end Publication page*****/
+#publication-container ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#publication-container li {
+	font-size: 1.3em;
+}
+
+#publication-start-row {
+	margin: 20px 0 10px;
+}
+
+#publication-container a {
+	font-size: 1.3em;
+}
+
+#publication-content-row {
+	padding: 0 15px;
+	font-size: 0.9em;
+}
+
+#publication-image-container {
+	padding-left: 0;
+}
+
+#publication-container img {
+	width: 100%;
+	margin: 0;
+}
+
+#publication-content-row p {
+	color: #666;
+}
+/*#publication-continue-row {
+	margin-bottom: 20px;
+}*/
+
+.bold-text {
+	font-weight: 700;
+}
+
+/*****end Publication page*****/
+
+/*****Footer page*****/
 footer {
 	text-align: center;
 	background-color: #fff;
@@ -276,6 +331,7 @@ footer {
 footer div {
 	/*font-size: 0.9em;*/
 }
+/*****end Footer page*****/
 
 /****************media queries********************/
 @media (max-width: 556px) {
@@ -287,6 +343,15 @@ footer div {
 	}
 	#home-img-container img {
 		margin-bottom: 15px;
+	}
+	#publication-image-container {
+		width: 40%;
+	}
+}
+
+@media (max-width: 420px) {
+	#publication-image-container {
+		width: 50%;
 	}
 }
 
