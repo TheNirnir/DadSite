@@ -310,6 +310,10 @@ a:hover, a:active {
 	font-size: 0.9em;
 }
 
+#publication-content-row p {
+	padding-top: 30px;
+}
+
 #publication-content-row span {
 	font-size: 1.2em;
 }

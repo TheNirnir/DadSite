@@ -259,6 +259,205 @@ var publicationsArray = [
 		achievement: "",
 		imageSource: "images/home-placeholder.jpg",
 		abstractContent: "Breast tissue segmentation is a fundamental task in digital mammography. Commonly, this segmentation is applied prior to breast density estimation. However, observations show a strong correlation between the segmentation parameters and the breast density, resulting in a chicken and egg problem. This paper presents a new method for breast segmentation, based on training with weakly labeled data, namely breast density categories. To this end, a Fuzzy-logic module is employed computing an adaptive parameter for segmentation. The suggested scheme consists of a feedback stage where a preliminary segmentation is used to allow extracting domain specific features from an early estimation of the tissue regions. Selected features are then fed into a fuzzy logic module to yield an updated threshold for segmentation. Our evaluation is based on 50 fibroglandular delineated images and on breast density classification, obtained on a large data set of 1243 full-field digital mammograms. The data set contained images from different devices. The proposed analysis provided an average Jaccard spatial similarity coefficient of 0.4 with improvement of this measure in 70\% of cases where the suggested module was applied. In breast density classification, average classification accuracy of 75\% was obtained, which significantly improved the baseline method (67.4\%). Major improvement is obtained in low breast densities where higher threshold levels rejects false positive regions. These results show a promise for the clinical application of this method in breast segmentation, without the need for laborious tissue annotation."
+	},
+	{
+		namesBeforeRami: "Y. Frommer,",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and N. Kiryati",
+		title: "Shape from Focus with Adaptive Focus Measure and High Order Derivatives, BMVC 2015,",
+		linkTo: "#",
+		linkName: "Paper(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "Shape From Focus (SFF) methods frequently use a single focus measure to obtain a depth map. Common focus measures are fixed and spatially invariant. In this paper we present a framework to create an adaptive focus measure based on ensemble of basis focus operators. Using the proposed framework we derive a new spatially variant focus measure obtained from linear combination of image derivatives. This approach effectively generalizes some of the existing measures. A new measure emerged from the proposed framework includes high order derivatives and presents a highly reliable focus measure. We rely on the focus curve standard deviation (CSTD) to determine the linear coefficients in our model. The emerged focus measure copes effectively with texture variation, strong intensity edges and depth discontinuities. Using CSTD we further suggest a new approach for aggregation in the focus volume succeeded by reconstruction based on the focus curve centroid. This different approach of aggregation and reconstruction yields improved depth maps, respecting shape smoothness and depth discontinuities for diversity of textured images. We assess the performance of our new approach by extensive experiments with highly realistic synthetic images and real images including two unique cases captured in the wild. In terms of focus measure, we significantly outperform the state-of-the-art, while presenting superior results comparing to two previously published alternatives."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "",
+		title: "A Unified Approach for Registration and Depth in Depth from Defocus, IEEE Transactions on Pattern Analysis and Machine Intelligence, 36(6), pp. 1041-1055, 2014.",
+		linkTo: "#",
+		linkName: "Publisher Link,",
+		link2To: "#",
+		link2Name: "Paper(PDF),",
+		link3To: "#",
+		link3Name: "Supplementary Material(PDF),",
+		link4To: "#",
+		link4Name: "Project Page.",
+		achievement: "Editor's selection for spotlight paper",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "Depth from Defocus (DFD) suggests a simple optical set-up to recover the shape of a scene through imaging with shallow depth of field. Although numerous methods have been proposed for DFD, less attention has been paid to the particular problem of alignment between the captured images. The inherent shift-variant defocus often prevents standard registration techniques from achieving the accuracy needed for successful shape reconstruction. In this paper, we address the DFD and registration problem in a unified framework, exploiting their mutual relation to reach a better solution for both cues. We draw a formal connection between registration and defocus blur, find its limitations and reveal the weakness of the standard isolated approaches of registration and depth estimation. The solution is approached by energy minimization. The efficiency of the associated numerical scheme is justified by showing its equivalence to the celebrated Newton-Raphson method and proof of convergence of the emerged linear system. The computationally intensive approach of DFD, newly combined with simultaneous registration, is handled by GPU computing. Experimental results demonstrate the high sensitivity of the recovered shapes to slight errors in registration and validate the superior performance of the suggested approach over two, separately applying registration and DFD alternatives."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and O. Ben-Shahar",
+		title: "A computationally efficient tracker with direct appearance-kinematic measure and adaptive Kalman filter, Journal of Real-Time Image Processing, online March 2013.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		link2To: "#",
+		link2Name: "Project Page",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "Depth from Defocus (DFD) suggests a simple optical set-up to recover the shape of a scene through imaging with shallow depth of field. Although numerous methods have been proposed for DFD, less attention has been paid to the particular problem of alignment between the captured images. The inherent shift-variant defocus often prevents standard registration techniques from achieving the accuracy needed for successful shape reconstruction. In this paper, we address the DFD and registration problem in a unified framework, exploiting their mutual relation to reach a better solution for both cues. We draw a formal connection between registration and defocus blur, find its limitations and reveal the weakness of the standard isolated approaches of registration and depth estimation. The solution is approached by energy minimization. The efficiency of the associated numerical scheme is justified by showing its equivalence to the celebrated Newton-Raphson method and proof of convergence of the emerged linear system. The computationally intensive approach of DFD, newly combined with simultaneous registration, is handled by GPU computing. Experimental results demonstrate the high sensitivity of the recovered shapes to slight errors in registration and validate the superior performance of the suggested approach over two, separately applying registration and DFD alternatives."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and G. Raveh",
+		title: "Variational Depth from Defocus in Real-Time, The 3rd IEEE Workshop on GPU for Computer Vision ICCV, pp. 522-529, November 2011, Barcelona.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		link2To: "#",
+		link2Name: "Presentation(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "With emerging of next generation of digital cameras offering a 3D reconstruction of a viewed scene, Depth from Defocus (DFD) presents an attractive option. In this approach the depth profile of the scene is recovered from two views captured in different focus setting. The DFD is well known as a computationally-intensive method due to the shift-variant filtering involved with its estimation. In this paper we present a parallel GPGPU implementation of DFD based on the variational framework, enabling computation up to 15 frames/sec for a SVGA sequence. This constitutes the first GPU application and the fastest implementation known for passive DFD. The speed-up is obtained by using the novel Fast Explicit Diffusion approach and the fine grain data parallelism in an explicit scheme. We evaluate our method on publicly available real data and compare its results to a recently published PDE based method. The proposed method outperforms previous DFD techniques in terms of accuracy/runtime, suggesting the DFD as an alternative for 3D reconstruction in real-time."
+	},
+	{
+		namesBeforeRami: "S. Cohen and",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "",
+		title: "Image de-noising by Bayesian regression, 16th Int. Conference on Image Analysis and Processing (ICIAP), September 2011, Italy",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "We present a kernel based approach for image de-noising in the spatial domain. The crux of evaluation for the kernel weights is addressed by a Bayesian regression. This approach introduces an adaptive filter, well preserving edges and thin structures in the image. The hyper-parameters in the model as well as the predictive distribution functions are estimated through an efficient iterative scheme. We evaluate our method on common test images, contaminated by white Gaussian noise. Qualitative results show the capability of our method to smooth out the noise while preserving the edges and fine texture. Quantitative comparison with the celebrated total variation (TV) and several wavelet methods ranks our approach among state-of-the-art denoising algorithms. Further advantages of our method include the capability of direct and simple integration of the noise PDF into the de-noising framework. The suggested method is fully automatic and can equally be applied to other regression problems."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and N. Sochen",
+		title: "Stereo Matching with Mumford-Shah Regularization and Occlusion Handling, IEEE Transactions on Pattern Analysis and Machine Intelligence, 32(11), pp. 2071-2084, 2010.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "Editor's selection for spotlight paper on the TPAMI Nov. 2010 Edition.<br>Performance ranked 4th out of 55 in the Middlebury Benchmark of Feb 2009, (Algo. VarMSOH - error threshold=0.5).",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "This paper addresses the problem of correspondence establishment in binocular stereo vision. We suggest a novel spatially continuous approach for stereo matching based on the variational framework. The proposed method suggests a unique regularization term based on Mumford-Shah functional for discontinuity preserving, combined with a new energy functional for occlusion handling. The evaluation process is based on concurrent minimization of two coupled energy functionals, one for domain segmentation (occluded vs. visible) and the other for disparity evaluation. In addition to a dense disparity map, our method also provides estimation for the half-occlusion domain, and a discontinuity function allocating the disparity/depth boundaries. Two new constraints are introduced improving the revealed discontinuity map. The experimental tests include a wide range of real data sets from Middlebury stereo database. The results demonstrate the capability of our method in calculating an accurate disparity function with sharp discontinuities and occlusion map recovery. Significant improvements are shown comparing to a recently published variational stereo approach. A comparison on the Middlebury stereo benchmark with sub-pixel accuracies shows that our method is currently among the top-ranked stereo matching algorithms."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and N.Sochen",
+		title: "A Geometric Framework and a New Criterion in Optical Flow Modeling, Journal of Mathematical Imaging and Vision, 33(2), pp. 178-194, February 2009.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "We evaluate the dense optical flow between two frames via variational approach. In this paper, a new framework for deriving the regularization term is introduced giving a geometric insight into the action of a smoothing term. The framework is based on the Beltrami paradigm in image denoising. It includes a general formulation that unifies several previous methods. Using the proposed framework we also derive two novel anisotropic regularizers incorporating a new criterion that requires co-linearity between the gradients of optical flow components and possibly the intensity gradient. We call this criterion &ldquo;alignment&rdquo; and reveal its existence also in the celebrated Nagel and Enkelmann&rsquo;s formulation. It is shown that the physical model of rotational motion of a rigid body, pure divergent/convergent flow and irrotational fluid flow, satisfy the alignment criterion in the flow field. Experimental tests in comparison to a recently published method show the capability of the new criterion in improving the optical flow estimations."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and N.Sochen",
+		title: "A Geometric Framework for Regularization of the Data Term in Stereo Vision, Journal of Mathematical Imaging and Vision, 331(1), pp. 17-33, May 2008.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "Every stereovision application must cope with the correspondence problem. The space of the matching variables, often consisting of spatial coordinates, intensity and disparity, is commonly referred as the data term (space). Since the data is often noisy a-priori preference is required constraining the evaluated disparity to be smooth (or piecewise smooth). It is shown that in the early local methods (e.g. window correlation techniques) a regularization is conducted on the data space. In the other hand, recent global methods consider a non-regularized data term with an added smoothing constraint implemented directly on the disparity. In this paper, we propose a new idea combining between the two latter approaches. To this end a novel geometric method for regularization of the data space is presented. The idea is then implemented on the state of the art variational method. Experimental results on the Middlebury real images demonstrate the qualitative and quantitative potential of the proposed approach."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and D. Aiger",
+		title: "Geodesic Active Contours with Combined Shape and Appearance Priors, In Proc. Advanced Concepts in Intelligent Vision Systems (ACIVS), vol. 5259 of LNCS, pp. 494-505, 2008.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "We present a new object segmentation method that is based on geodesic active contours with combined shape and appearance priors. It is known that using shape priors can significantly improve object segmentation in cluttered scenes and occlusions. Within this context, we add a new prior, based on the appearance of the object, (i.e., an image) to be segmented. This method enables the appearance pattern to be incorporated within the geodesic active contour framework with shape priors, seeking for the object whose boundaries lie on high image gradients and that best fits the shape and appearance of a reference model. The output contour results from minimizing an energy functional built of these three main terms. We show that appearance is a powerful term that distinguishes between objects with similar shapes and capable of successfully segment an object in a very cluttered environment where standard active contours (even those with shape priors) tend to fail."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and N. Sochen",
+		title: "Variational Stereo Vision with Sharp Discontinuities and Occlusion Handling, In Proc. IEEE International Conference on Computer Vision (ICCV), pp. 1-7, 2007.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "This paper addresses the problem of correspondence establishment in binocular stereo vision. We suggest a novel variational approach that considers both the discontinuities and occlusions. It deals with color images as well as gray levels. The proposed method divides the image domain into the visible and occluded regions where each region is handled differently. The depth discontinuities in the visible domain are preserved by use of the total variation term in conjunction with the Mumford-Shah framework. In addition to the dense disparity and the occlusion maps, our method also provides a discontinuity function revealing the location of the boundaries in the disparity map. We evaluate our method on data sets from Middlebury site showing superior performance in comparison to the state of the art variational technique."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and N. Sochen",
+		title: "A General Framework and New Alignment Criterion for Dense Optical Flow, In Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), vol. 1, pp. 529-536, 2006.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "The problem of dense optical flow computation is addressed from a variational viewpoint. A new geometric framework is introduced. It unifies previous art and yields new efficient methods. Along with the framework a new alignment criterion suggests itself. It is shown that the alignment between the gradients of the optical flow components and between the latter and the intensity gradients is an important measure of the flow's quality. Adding this criterion as a requirement in the optimization process improves the resulting flow. This is demonstrated in synthetic and real sequences."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and N. Sochen",
+		title: "Non-Isotropic Regularization of the Correspondence Space in Stereo Vision, In Proc. Int. Conference in Pattern Recognition (ICPR), vol. 4, pp. 293-296, 2004.",
+		linkTo: "#",
+		linkName: "Preprint(PDF)",
+		achievement: "",
+		imageSource: "images/home-placeholder.jpg",
+		abstractContent: "The correspondence problem in stereo vision is notoriously difficult. In many approaches a noisy solution is extracted from the correspondence space. Various sophisticated regularization techniques are applied then on this noisy solution. We study here the possibility to denoise the correspondence/correlation space before extracting the solution, by a non-linear and non-isotropic scheme. We show that this methods preserves edges (depth discontinuities) well and overcomes some of the problems encountered in previous approaches."
+	},
+	// other publications?????!!!!!
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and O. Ben-Shahar",
+		title: "A Prediction based Fast and Robust Tracker, Israel Machine Vision Conference, 2011.",
+		linkTo: "",
+		linkName: "",
+		achievement: "",
+		imageSource: "",
+		abstractContent: ""
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and O. Ben-Shahar",
+		title: "A Real-Time and Robust Tracker for Robot Vision, The 3rd Israeli Conference on Robotics, 2010.",
+		linkTo: "",
+		linkName: "",
+		achievement: "",
+		imageSource: "",
+		abstractContent: ""
+	},
+	// In Aerospace Sciences?????!!!!!!
+	{
+		namesBeforeRami: "A. Rosen and",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "",
+		title: "A Mathematical Modeling of Helicopter Track and Balance – Theory, Journal of Sound and Vibration, vol. 200(5), pp. 589-603, 1997.",
+		linkTo: "",
+		linkName: "",
+		achievement: "",
+		imageSource: "",
+		abstractContent: ""
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and A. Rosen",
+		title: "A Mathematical Modeling of Helicopter Track and Balance – Results, Journal of Sound and Vibration, vol. 200(5), pp. 605-620, 1997.",
+		linkTo: "",
+		linkName: "",
+		achievement: "",
+		imageSource: "",
+		abstractContent: ""
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and A. Rosen",
+		title: "Investigation of Helicopter Rotor Track and Balance, In Proc. of 37th Israel Annual Conference on Aerospace Sciences, pp. 308-319, 1997.",
+		linkTo: "",
+		linkName: "",
+		achievement: "",
+		imageSource: "",
+		abstractContent: ""
 	}
 ]
 
@@ -425,15 +624,53 @@ function buildPublicationsViewHTML(publicationsArray, PublicationsTitleHtml, Pub
 		html = insertProperty(html, "linkName", linkName);
 		html = insertProperty(html, "achievement", achievement);
 
-			if (publicationsArray[j].imageSource !== "") {
-				html += PublicationsOptionalRowHtml;
+		if (publicationsArray[j].link2To) {
+			var link2To = publicationsArray[j].link2To;
+			var link2Name = publicationsArray[j].link2Name;
 
-				var imageSource = publicationsArray[j].imageSource;
-				var abstractContent = publicationsArray[j].abstractContent;
+			html = insertProperty(html, "link2To", link2To);
+			html = insertProperty(html, "link2Name", link2Name);
+		}
+		if (publicationsArray[j].link3To) {
+			var link3To = publicationsArray[j].link3To;
+			var link3Name = publicationsArray[j].link3Name;
 
-				html = insertProperty(html, "imageSource", imageSource);
-				html = insertProperty(html, "abstractContent", abstractContent);
-			}
+			html = insertProperty(html, "link3To", link3To);
+			html = insertProperty(html, "link3Name", link3Name);
+		}
+		if (publicationsArray[j].link4To) {
+			var link4To = publicationsArray[j].link4To;
+			var link4Name = publicationsArray[j].link4Name;
+
+			html = insertProperty(html, "link5To", link4To);
+			html = insertProperty(html, "link5Name", link4Name);
+		}
+		if (publicationsArray[j].link5To) {
+			var link5To = publicationsArray[j].link5To;
+			var link5Name = publicationsArray[j].link5Name;
+
+			html = insertProperty(html, "link5To", link5To);
+			html = insertProperty(html, "link5Name", link5Name);
+		}
+
+		html = insertProperty(html, "link2To", "");
+		html = insertProperty(html, "link2Name", "");
+		html = insertProperty(html, "link3To", "");
+		html = insertProperty(html, "link3Name", "");
+		html = insertProperty(html, "link4To", "");
+		html = insertProperty(html, "link4Name", "");
+		html = insertProperty(html, "link5To", "");
+		html = insertProperty(html, "link5Name", "");
+
+		if (publicationsArray[j].imageSource !== "") {
+			html += PublicationsOptionalRowHtml;
+
+			var imageSource = publicationsArray[j].imageSource;
+			var abstractContent = publicationsArray[j].abstractContent;
+
+			html = insertProperty(html, "imageSource", imageSource);
+			html = insertProperty(html, "abstractContent", abstractContent);
+		}
 		html += "</li>";
 		finalHtml += html;
 
