@@ -374,6 +374,12 @@ footer div {
 	}
 }
 
+@media (max-width: 428px) {
+	#Supervision-list li {
+		margin-bottom: 40px;
+	}
+}
+
 /*@media (min-width: 500px) and (max-width: 663px) {
 	#home-img-container {
 		width: 33.333333333%;

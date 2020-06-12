@@ -59,7 +59,42 @@ var newsArray =[
 		linkName: '',
 		continueContent: ''
 	}
-]
+];
+
+var supervisionArray = [
+	{
+		name: "Mor Shpigel-Nacson",
+		content: "Intern (MSc student), Technion."
+	},
+	{
+		name: "Eald Amrani",
+		content: "MSc (joint with Prof. Alex Bronstein), Technion."
+	},
+	{
+		name: "Doron Elad",
+		content: "Postdoc (joint with Prof. Ofer Pasternak and Prof. Nir Sochen), Tel-Aviv University."
+	},
+	{
+		name: "Ran Bakalo",
+		content: "MSc (joint with Prof. Jacob Goldberger), Haifa University, 2018."
+	},
+	{
+		name: "Ran Ben-Yitshak",
+		content: "Intern (MSc student), Technion, 2017."
+	},
+	{
+		name: "Jeremias Sulam",
+		content: "Intern (PhD student), Technion, 2016."
+	},
+	{
+		name: "Yuval Frommer",
+		content: "MSc (joint with Prof. Nahum Kiryati), Tel-Aviv University, 2015."
+	},
+	{
+		name: "Tomer Livneh and Dan Smamah",
+		content: "Graduate project, Tel-Aviv University, 2015."
+	}
+];
 
 var publicationsArray = [
 	{
@@ -459,12 +494,14 @@ var publicationsArray = [
 		imageSource: "",
 		abstractContent: ""
 	}
-]
+];
 
 var PublicationsTitleHtml = "snippets/Publications-title-snippet.html";
 var PublicationsFirstRowHtml = "snippets/Publication-first-row-snippet.html";
 var PublicationsOptionalRowHtml = "snippets/Publication-optional-row-snippet.html"
 var NewsHTML = "snippets/News-list-snippet.html";
+var supervisionTitleHtml = "snippets/Supervision-title-snippet.html";
+var supervisionHtml = "snippets/Supervision-snippet.html";
 var newsInterval;
 var i = 0;
 
@@ -474,14 +511,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 function pageTransformation (pageName) {
 	clearInterval(newsInterval);
-	$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
-			document.querySelector("#main-content").innerHTML = responseText;
-		},
-		false);
 	document.querySelector(".page-on").className = "";
 	document.querySelector("#" + pageName + "-option").className = "page-on";
 	if (pageName == "Home") {
 		i = 0;
+		$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
+			document.querySelector("#main-content").innerHTML = responseText;
+		},
+		false);
 		waitForNewsToDisplay("#news-list", 100, newsArray);
 		function waitForNewsToDisplay(selector, time, newsArray) {
 	        if(document.querySelector(selector)!=null) {
@@ -508,6 +545,10 @@ function pageTransformation (pageName) {
 
 	if (pageName == "Publications") {
 	    buildAndShowPublication(publicationsArray);
+	}
+
+	if (pageName == "Supervision") {
+		buildAndShowSupervision(supervisionArray);
 	}
 }
 
@@ -677,7 +718,36 @@ function buildPublicationsViewHTML(publicationsArray, PublicationsTitleHtml, Pub
 		j++;
 	}
 	finalHtml += "</ul>";
-return finalHtml;
+	return finalHtml;
+}
+
+function buildAndShowSupervision (supervisionArray) {
+		$ajaxUtils.sendGetRequest(supervisionTitleHtml, function(supervisionTitleHtml) {
+			$ajaxUtils.sendGetRequest(supervisionHtml, function(supervisionHtml) {
+				var SupervisionViewHTML = buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervisionArray);
+				document.querySelector("#main-content").innerHTML = SupervisionViewHTML;
+			}, false);
+		}, false);
+}
+
+function buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervisionArray) {
+	var finalHtml = supervisionTitleHtml;
+
+	for (var j = 0; j<supervisionArray.length;) {
+		var html = supervisionHtml;
+
+		var name = supervisionArray[j].name;
+		var content = supervisionArray[j].content;
+
+		html = insertProperty(html, "name", name);
+		html = insertProperty(html, "content", content);
+
+		finalHtml += html;
+
+		j++;
+	}
+	finalHtml += "</ul></div>";
+	return finalHtml;
 }
 // function CVfunction () {
 // 	if (confirm("The CV file will be downloaded to your computer as a PDF file")) {
