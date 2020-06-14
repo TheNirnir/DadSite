@@ -269,6 +269,19 @@ a:hover, a:active {
 	font-weight: 500;
 	font-size: 1em;
 }
+
+h3 {
+	text-align: center;
+	font-weight: 700;
+}
+
+hr {
+	/*padding-top: 100px; */
+	margin-top: 50px;
+	height: 1px;
+	background-color: #8ba8b7;
+	width: 70%;
+}
 /*****end Supervision page*****/
 
 /*****CV page*****/

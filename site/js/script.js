@@ -644,9 +644,17 @@ function buildAndShowPublication (publicationsArray) {
 
 function buildPublicationsViewHTML(publicationsArray, PublicationsTitleHtml, PublicationsFirstRowHtml, PublicationsOptionalRowHtml) {
 	var finalHtml = PublicationsTitleHtml;
+	var smallHeaderRow = publicationsArray.length - 3;
 
 	for (var j = 0; j<publicationsArray.length;) {
-		var html = "<li>";
+		var html = "";
+
+		if (j == smallHeaderRow) {
+			// html += "<hr id='hr'>";
+			html += "<hr><h3>In Aerospace Sciences</h3>";
+		}
+
+		html += "<li>";
 		html += PublicationsFirstRowHtml;
 
 		var namesBeforeRami = publicationsArray[j].namesBeforeRami;
