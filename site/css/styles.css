@@ -413,7 +413,7 @@ footer div {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
 	ul#menu-bar {
 		width: 345px;
 		width: fit-content;
@@ -435,7 +435,7 @@ footer div {
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
 	ul#menu-bar {
 		width: 292.9px;
 		/*width: fit-content;*/
@@ -451,7 +451,7 @@ footer div {
 	}
 }
 
-@media (max-width: 330px) {
+@media (max-width: 360px) {
 	ul#menu-bar {
 		width: 263.8px;
 		/*width: fit-content;*/
