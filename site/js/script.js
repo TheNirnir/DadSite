@@ -1,60 +1,70 @@
 var newsArray =[
 	{
-		startContent: 'April 2020: New arXiv paper:',
+		date: "April 2020",
+		startContent: 'New arXiv paper:',
 		linkTo: 'https://arxiv.org/abs/2004.10141',
 		linkName: 'TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition.',
 		continueContent: ''
 	},
 	{
-		startContent: 'March 2020: IBM Research Blog',
+		date: "March 2020",
+		startContent: 'IBM Research Blog',
 		linkTo: 'https://www.ibm.com/blogs/research/2020/03/benefits-ai-for-breast-cancer-detection/',
 		linkName: 'The potential benefits of AI for breast cancer detection.',
 		continueContent: ''
 	},
 	{
-		startContent: "March 2020: New arXiv paper:",
+		date: "March 2020",
+		startContent: "New arXiv paper:",
 		linkTo: 'https://arxiv.org/abs/2003.03186',
 		linkName: 'Noise Estimation Using Density Estimation for Self-Supervised Multimodal Learning.',
 		continueContent: ''
 	},
 	{
-		startContent: 'March 2020: New paper:',
+		date: "March 2020",
+		startContent: 'New paper:',
 		linkTo: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2761795',
 		linkName: '"Evaluation of Combined Artificial Intelligence and Radiologist Assessment to Interpret Screening Mammograms", JAMA Networks Open.',
 		continueContent: ''
 	},
 	{
-		startContent: 'February 2020: Our workshop proposal',
+		date: "February 2020",
+		startContent: 'Our workshop proposal',
 		linkTo: 'https://sites.google.com/view/multimodalvideo-v2/',
 		linkName: 'Workshop on multi-modal video analysis and moments in time", JAMA Networks Open.',
 		continueContent: 'has been accepted for ECCV 2020.'
 	},
 	{
-		startContent: 'October 2019: Paper "Learning to Detect and Retrieve Objects from Unlabeled Videos", Workshop on multi-modal video analysis and moments in time.',
+		date: "October 2019",
+		startContent: 'Paper "Learning to Detect and Retrieve Objects from Unlabeled Videos", Workshop on multi-modal video analysis and moments in time.',
 		linkTo: '',
 		linkName: '',
 		continueContent: ''
 	},
 	{
-		startContent: 'June 2019: Paper "Mammogram Classification with Ordered Loss" was nominated for the best paper award at AIME 2019.',
+		date: "June 2019",
+		startContent: 'Paper "Mammogram Classification with Ordered Loss" was nominated for the best paper award at AIME 2019.',
 		linkTo: '',
 		linkName: '',
 		continueContent: ''
 	},
 	{
-		startContent: 'May 2019: New arXiv paper: "Toward Self-Supervised Object Detection in Unlabeled Videos".',
+		date: "May 2019",
+		startContent: 'New arXiv paper: "Toward Self-Supervised Object Detection in Unlabeled Videos".',
 		linkTo: '',
 		linkName: '',
 		continueContent: ''
 	},
 	{
-		startContent: 'May 2019: New arXiv paper: "A dual branch deep neural network for classification and detection in mammograms".',
+		date: "May 2019",
+		startContent: 'New arXiv paper: "A dual branch deep neural network for classification and detection in mammograms".',
 		linkTo: '',
 		linkName: '',
 		continueContent: ''
 	},
 	{
-		startContent: 'March 2019: New paper "Mammogram Classification with Ordered Loss" accepted to AIME 2019.',
+		date: "March 2019",
+		startContent: 'New paper "Mammogram Classification with Ordered Loss" accepted to AIME 2019.',
 		linkTo: '',
 		linkName: '',
 		continueContent: ''
@@ -561,11 +571,11 @@ function pageTransformation (pageName) {
 function newsOrderFunction (i) {
 	var newsOrderArray = [];
 	for (var j=0; j<4;) {
-		if (i < 8) { //i<newsArray.length
+		if (i < 6) { //i<newsArray.length
 			newsOrderArray[j] = i;
 		}
 		else {
-			newsOrderArray[j] = i - 8; //i - newsArray.length
+			newsOrderArray[j] = i - 6; //i - newsArray.length
 		}
 		i++;
 		j++;
@@ -618,12 +628,14 @@ function buildHomeNewsViewHTML(newsArray, HomeNewsHtml, newsOrder) {
 		// k = parseInt(k);
 		var html = HomeNewsHtml;
 		var number = newsOrder[k]+1;
+		var date = newsArray[newsOrder[k]].date;
 		var startContent = newsArray[newsOrder[k]].startContent;
 		var linkTo = newsArray[newsOrder[k]].linkTo;
 		var linkName = newsArray[newsOrder[k]].linkName;
 		var continueContent = newsArray[newsOrder[k]].continueContent;
 
 		html = insertProperty(html, "number", number);
+		html = insertProperty(html, "date", date);
 		html = insertProperty(html, "startContent", startContent);
 		html = insertProperty(html, "linkTo", linkTo);
 		html = insertProperty(html, "linkName", linkName);
@@ -779,11 +791,13 @@ function buildNewsViewHTML(NewsTitleHtml, NewsHtml, newsArray) {
 	for (var j = 0; j<newsArray.length;) {
 		var html = NewsHtml;
 
+		var date = newsArray[j].date;
 		var startContent = newsArray[j].startContent;
 		var linkTo = newsArray[j].linkTo;
 		var linkName = newsArray[j].linkName;
 		var continueContent = newsArray[j].continueContent;
 
+		html = insertProperty(html, "date", date);
 		html = insertProperty(html, "startContent", startContent);
 		html = insertProperty(html, "linkTo", linkTo);
 		html = insertProperty(html, "linkName", linkName);

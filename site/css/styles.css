@@ -263,6 +263,11 @@ a:hover, a:active {
 #News-container ul li {
 	margin-bottom: 20px; 
 }
+
+#News-container ul li span {
+	font-weight: 700;
+	font-size: 1.1em; 
+}
 /*****end News page*****/
 
 /*****Supervision page*****/
