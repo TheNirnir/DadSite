@@ -429,6 +429,17 @@ var publicationsArray = [
 	{
 		namesBeforeRami: "",
 		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and O. Ben-Shahar",
+		title: "A Prediction based Fast and Robust Tracker, Israel Machine Vision Conference, 2011.",
+		linkTo: "",
+		linkName: "",
+		achievement: "",
+		imageSource: "",
+		abstractContent: ""
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N. Sochen",
 		title: "Stereo Matching with Mumford-Shah Regularization and Occlusion Handling, IEEE Transactions on Pattern Analysis and Machine Intelligence, 32(11), pp. 2071-2084, 2010.",
 		linkTo: "#",
@@ -436,6 +447,17 @@ var publicationsArray = [
 		achievement: "Editor's selection for spotlight paper on the TPAMI Nov. 2010 Edition.<br>Performance ranked 4th out of 55 in the Middlebury Benchmark of Feb 2009, (Algo. VarMSOH - error threshold=0.5).",
 		imageSource: "images/home-placeholder.jpg",
 		abstractContent: "This paper addresses the problem of correspondence establishment in binocular stereo vision. We suggest a novel spatially continuous approach for stereo matching based on the variational framework. The proposed method suggests a unique regularization term based on Mumford-Shah functional for discontinuity preserving, combined with a new energy functional for occlusion handling. The evaluation process is based on concurrent minimization of two coupled energy functionals, one for domain segmentation (occluded vs. visible) and the other for disparity evaluation. In addition to a dense disparity map, our method also provides estimation for the half-occlusion domain, and a discontinuity function allocating the disparity/depth boundaries. Two new constraints are introduced improving the revealed discontinuity map. The experimental tests include a wide range of real data sets from Middlebury stereo database. The results demonstrate the capability of our method in calculating an accurate disparity function with sharp discontinuities and occlusion map recovery. Significant improvements are shown comparing to a recently published variational stereo approach. A comparison on the Middlebury stereo benchmark with sub-pixel accuracies shows that our method is currently among the top-ranked stereo matching algorithms."
+	},
+	{
+		namesBeforeRami: "",
+		RamiBenAri: "Rami Ben-Ari",
+		namesAfterRami: "and O. Ben-Shahar",
+		title: "A Real-Time and Robust Tracker for Robot Vision, The 3rd Israeli Conference on Robotics, 2010.",
+		linkTo: "",
+		linkName: "",
+		achievement: "",
+		imageSource: "",
+		abstractContent: ""
 	},
 	{
 		namesBeforeRami: "",
@@ -503,30 +525,7 @@ var publicationsArray = [
 		imageSource: "images/home-placeholder.jpg",
 		abstractContent: "The correspondence problem in stereo vision is notoriously difficult. In many approaches a noisy solution is extracted from the correspondence space. Various sophisticated regularization techniques are applied then on this noisy solution. We study here the possibility to denoise the correspondence/correlation space before extracting the solution, by a non-linear and non-isotropic scheme. We show that this methods preserves edges (depth discontinuities) well and overcomes some of the problems encountered in previous approaches."
 	},
-	// other publications?????!!!!!
-	{
-		namesBeforeRami: "",
-		RamiBenAri: "Rami Ben-Ari",
-		namesAfterRami: "and O. Ben-Shahar",
-		title: "A Prediction based Fast and Robust Tracker, Israel Machine Vision Conference, 2011.",
-		linkTo: "",
-		linkName: "",
-		achievement: "",
-		imageSource: "",
-		abstractContent: ""
-	},
-	{
-		namesBeforeRami: "",
-		RamiBenAri: "Rami Ben-Ari",
-		namesAfterRami: "and O. Ben-Shahar",
-		title: "A Real-Time and Robust Tracker for Robot Vision, The 3rd Israeli Conference on Robotics, 2010.",
-		linkTo: "",
-		linkName: "",
-		achievement: "",
-		imageSource: "",
-		abstractContent: ""
-	},
-	// In Aerospace Sciences?????!!!!!!
+	// In Aerospace Sciences
 	{
 		namesBeforeRami: "A. Rosen and",
 		RamiBenAri: "Rami Ben-Ari",
