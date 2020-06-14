@@ -42,9 +42,10 @@ h1 {
 
 ul#menu-bar {
 	/*float: right;*/
-	width: 509px;
+	/*width: 509px;*/
+	width: fit-content;
 	list-style-type: none;
-	padding: 0 10px;
+	padding: 0 2px;
 	height: fit-content;
 	background-color: #fff;
 	border-radius: 10px;
@@ -71,7 +72,8 @@ ul#menu-bar {
 	position: absolute;
 	height: 55px;
 	bottom: 0;
-	left: 209px;
+	/*left: 209px;*/
+	left: 204;
 }
 
 #menu-bar li#Home-option a, #menu-bar li#Home-option a:visited {
@@ -83,7 +85,8 @@ ul#menu-bar {
 }
 
 #menu-bar #Home-option-place-holder {
-	padding: 0 48px 0 75px;
+	/*padding: 0 48px 0 75px;*/
+	padding: 0 51px 0 61px;
 }
 
 #menu-bar #Supervision-option-place-holder {
@@ -120,7 +123,7 @@ ul#menu-bar {
 
 h2 {
 	text-align: center;
-	margin-bottom: 20px;
+	margin: 0 0 25px;
 }
 
 a:link, a:visited {
@@ -186,11 +189,11 @@ a:hover, a:active {
 	margin-bottom: 20px;
 }
 
-#news-container {
+#home-news-container {
 	margin-bottom: 15px;
 }
 
-#news-content {
+#home-news-content {
 	/*background-color: #ccc;*/
 	background-image: linear-gradient(#8ba8b7, #fff);
 	/*height: 470px;*/
@@ -199,24 +202,24 @@ a:hover, a:active {
 	text-align: center;
 }
 
-#news-content h3 {
+#home-news-content h3 {
 	margin: 5px 0;
 	color: #000;
 	font-weight: 600;
 }
 
-#news-content ul {
+#home-news-content ul {
 	list-style-type: none;
 	padding: 0 25px;
 	font-size: 1.3em;
 	text-align: left;
 }
 
-#news-content ul li {
+#home-news-content ul li {
 	margin-bottom: 20px;
 }
 
-#news-content ul li span {
+#home-news-content ul li span {
 	font-size: 1.2em;
 	font-weight: 600;
 	padding-right: 8px;
@@ -246,6 +249,21 @@ a:hover, a:active {
 	margin-bottom: 10px; 
 }*/
 /*****end Home page*****/
+
+/*****News page*****/
+#News-container {
+	font-size: 1.2em;
+}
+
+#News-container ul {
+	list-style-type: none;
+	padding: 0 5px;
+}
+
+#News-container ul li {
+	margin-bottom: 20px; 
+}
+/*****end News page*****/
 
 /*****Supervision page*****/
 #Supervision-list {
@@ -393,6 +411,64 @@ footer div {
 	}
 }
 
+
+
+@media (max-width: 600px) {
+	ul#menu-bar {
+		width: 345px;
+		width: fit-content;
+		font-size: 1em;
+	}
+	#menu-bar li, #menu-bar li:visited {
+		padding: 0 5px;
+	}
+	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
+		height: 40px;
+		border-radius: 13px;
+		/*left: 204;*/
+	}
+	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
+		padding: 0 2.5px;
+	}
+	#menu-bar #Home-option-place-holder {
+		padding: 0 32px 0 42px;
+	}
+}
+
+@media (max-width: 400px) {
+	ul#menu-bar {
+		width: 292.9px;
+		/*width: fit-content;*/
+		font-size: 0.8em;
+	}
+	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
+		height: 35px;
+		border-radius: 12px;
+		/*left: 204;*/
+	}
+	#menu-bar #Home-option-place-holder {
+		padding: 0 27px 0 37px;
+	}
+}
+
+@media (max-width: 330px) {
+	ul#menu-bar {
+		width: 263.8px;
+		/*width: fit-content;*/
+		font-size: 0.7em;
+	}
+	#menu-bar li#Home-option, #menu-bar li#Home-option:visited {
+		height: 30px;
+		border-radius: 10px;
+		/*left: 204;*/
+	}
+	#menu-bar #Home-option-place-holder {
+		padding: 0 24px 0 34px;
+	}
+}
+
+
+
 /*@media (min-width: 500px) and (max-width: 663px) {
 	#home-img-container {
 		width: 33.333333333%;
@@ -425,7 +501,7 @@ footer div {
 	}
 }*/
 
-@media (min-width: 420px) and (max-width: 560px) {
+/*@media (min-width: 420px) and (max-width: 560px) {
 	ul#menu-bar {
 		width: 368.5px;
 		font-size: 1.1em;
@@ -446,12 +522,6 @@ footer div {
 	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
 		padding: 0 2.5px;
 	}
-	/*#home-img-container {
-		width: 41.666666666%;
-	}
-	#home-text-container {
-		width: 58.333333333%;
-	}*/
 }
 
 @media (min-width: 365px) and (max-width: 419px) {
@@ -475,12 +545,6 @@ footer div {
 	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
 		padding: 0 2.5px;
 	}
-	/*#home-img-container {
-		width: 100%;
-	}
-	#home-text-container {
-		width: 100%;
-	}*/
 }
 
 @media (min-width: 315px) and (max-width: 364px) {
@@ -529,5 +593,5 @@ footer div {
 	#menu-bar li#Home-option:hover, #menu-bar li#Home-option:active {
 		padding: 0 2.5px;
 	}
-}
+}*/
 /****************end media queries********************/

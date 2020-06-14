@@ -499,9 +499,11 @@ var publicationsArray = [
 var PublicationsTitleHtml = "snippets/Publications-title-snippet.html";
 var PublicationsFirstRowHtml = "snippets/Publication-first-row-snippet.html";
 var PublicationsOptionalRowHtml = "snippets/Publication-optional-row-snippet.html"
-var NewsHTML = "snippets/News-list-snippet.html";
+var HomeNewsHtml = "snippets/News-list-snippet.html";
 var supervisionTitleHtml = "snippets/Supervision-title-snippet.html";
 var supervisionHtml = "snippets/Supervision-snippet.html";
+var NewsTitleHtml = "snippets/News-title-snippet.html";
+var NewsHtml = "snippets/News-snippet.html";
 var newsInterval;
 var i = 0;
 
@@ -519,15 +521,15 @@ function pageTransformation (pageName) {
 			document.querySelector("#main-content").innerHTML = responseText;
 		},
 		false);
-		waitForNewsToDisplay("#news-list", 100, newsArray);
+		waitForNewsToDisplay("#home-news-list", 100, newsArray);
 		function waitForNewsToDisplay(selector, time, newsArray) {
 	        if(document.querySelector(selector)!=null) {
 	        	var newsOrder = newsOrderFunction(i);
-				buildAndShowNews(newsArray, newsOrder);
+				buildAndShowHomeNews(newsArray, newsOrder);
 				newsInterval = setInterval(function () {
 					var newsOrder = newsOrderFunction(i);
 					// console.log(newsOrder);
-					buildAndShowNews(newsArray, newsOrder);
+					buildAndShowHomeNews(newsArray, newsOrder);
 					i++;
 					if (i == newsArray.length) {
 						i = 0;
@@ -550,23 +552,27 @@ function pageTransformation (pageName) {
 	if (pageName == "Supervision") {
 		buildAndShowSupervision(supervisionArray);
 	}
+
+	if (pageName == "News") {
+		buildAndShowNews(newsArray);
+	}
 }
 
 function newsOrderFunction (i) {
 	var newsOrderArray = [];
 	for (var j=0; j<4;) {
-		if (i < newsArray.length) {
+		if (i < 8) { //i<newsArray.length
 			newsOrderArray[j] = i;
 		}
 		else {
-			newsOrderArray[j] = i - newsArray.length;
+			newsOrderArray[j] = i - 8; //i - newsArray.length
 		}
 		i++;
 		j++;
 	}
 	// console.log(newsOrderArray);
 	return newsOrderArray;
-	// buildAndShowNews(newsArray, newsOrderArray);
+	// buildAndShowHomeNews(newsArray, newsOrderArray);
 }
 
 function insertProperty (string, propName, propValue) {
@@ -575,14 +581,14 @@ function insertProperty (string, propName, propValue) {
 	return string;
 }
 
-function buildAndShowNews (newsArray, newsOrder) {
-		$ajaxUtils.sendGetRequest(NewsHTML, function(NewsHTML) {
-			var NewsViewHTML = buildNewsViewHTML(newsArray, NewsHTML, newsOrder);
-			document.querySelector("#news-list").innerHTML = NewsViewHTML;
+function buildAndShowHomeNews (newsArray, newsOrder) {
+		$ajaxUtils.sendGetRequest(HomeNewsHtml, function(HomeNewsHtml) {
+			var NewsViewHTML = buildHomeNewsViewHTML(newsArray, HomeNewsHtml, newsOrder);
+			document.querySelector("#home-news-list").innerHTML = NewsViewHTML;
 		}, false);
 }
 
-function buildNewsViewHTML(newsArray, NewsHTML, newsOrder) {
+function buildHomeNewsViewHTML(newsArray, HomeNewsHtml, newsOrder) {
 	var finalHtml = "";
 
 	// console.log(newsOrder);
@@ -610,7 +616,7 @@ function buildNewsViewHTML(newsArray, NewsHTML, newsOrder) {
 		// 	console.log("k is not equal to 8");
 		// }
 		// k = parseInt(k);
-		var html = NewsHTML;
+		var html = HomeNewsHtml;
 		var number = newsOrder[k]+1;
 		var startContent = newsArray[newsOrder[k]].startContent;
 		var linkTo = newsArray[newsOrder[k]].linkTo;
@@ -754,6 +760,39 @@ function buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervi
 
 		j++;
 	}
+	finalHtml += "</ul></div>";
+	return finalHtml;
+}
+
+function buildAndShowNews (newsArray) {
+		$ajaxUtils.sendGetRequest(NewsTitleHtml, function(NewsTitleHtml) {
+			$ajaxUtils.sendGetRequest(NewsHtml, function(NewsHtml) {
+				var NewsViewHTML = buildNewsViewHTML(NewsTitleHtml, NewsHtml, newsArray);
+				document.querySelector("#main-content").innerHTML = NewsViewHTML;
+			}, false);
+		}, false);
+}
+
+function buildNewsViewHTML(NewsTitleHtml, NewsHtml, newsArray) {
+	var finalHtml = NewsTitleHtml;
+
+	for (var j = 0; j<newsArray.length;) {
+		var html = NewsHtml;
+
+		var startContent = newsArray[j].startContent;
+		var linkTo = newsArray[j].linkTo;
+		var linkName = newsArray[j].linkName;
+		var continueContent = newsArray[j].continueContent;
+
+		html = insertProperty(html, "startContent", startContent);
+		html = insertProperty(html, "linkTo", linkTo);
+		html = insertProperty(html, "linkName", linkName);
+		html = insertProperty(html, "continueContent", continueContent);
+		finalHtml += html;
+
+		j++;
+	}
+
 	finalHtml += "</ul></div>";
 	return finalHtml;
 }
