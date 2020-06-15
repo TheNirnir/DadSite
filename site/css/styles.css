@@ -303,10 +303,21 @@ a:hover, a:active {
 /*****end Supervision page*****/
 
 /*****CV page*****/
+
+#CV-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+#CV-list li img {
+	width: 100%;
+	height: auto;
+}
 /*#pdf-cv {
 	width: fit-content;
 	margin: 0 auto;
 }*/
+
 /*****end CV page*****/
 
 /*****end Publication page*****/
@@ -321,7 +332,7 @@ a:hover, a:active {
 	/*margin-top: 10px;*/
 }
 
-#more-padding-publication {
+.more-padding-publication {
 	padding-top: 150px;
 }
 
