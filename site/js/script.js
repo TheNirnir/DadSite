@@ -171,7 +171,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "E.Amrani, O. Azulai, U. Barzelay and D. Rotman",
 		title: "TAEN: Temporal Aware Embedding Network for Few-Shot Action Recognition,",
-		linkTo: "#",
+		linkTo: "https://arxiv.org/abs/2004.10141",
 		linkName: "arXiv, 2020",
 		achievement: "",
 		imageSource: "",
