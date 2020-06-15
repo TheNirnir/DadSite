@@ -10,9 +10,9 @@ body {
 
 .navbar {
 	text-align: center;
-	/*background-color: #8ba8b7;*/
+	background-color: #8ba8b7;
 	/*background-color: #45606e;*/
-	background-color: #587c8d; 
+	/*background-color: #587c8d; */
 	border: none;
 	margin-bottom: 0;
 	border-radius: 0;
@@ -125,7 +125,8 @@ ul#menu-bar {
 	/*background-image: linear-gradient(#8ba8b7, #fff);*/
 	/*background-image: linear-gradient(#005580, #8ba8b7, #e6f7ff);*/
 	/*background-image: linear-gradient(#45606e, #8ba8b7, #e6f7ff);*/
-	background-image: linear-gradient(#587c8d, #8ba8b7, #e6f7ff);
+	/*background-image: linear-gradient(#587c8d, #8ba8b7, #e6f7ff);*/
+	background-image: linear-gradient(#8ba8b7, #c0d0d8, #e6f7ff);
 
 	font-family: 'Asap', sans-serif;
 }
