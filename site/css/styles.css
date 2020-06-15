@@ -293,18 +293,6 @@ a:hover, a:active {
 	font-size: 1em;
 }
 
-h3 {
-	text-align: center;
-	font-weight: 700;
-}
-
-hr {
-	/*padding-top: 100px; */
-	margin-top: 50px;
-	height: 1px;
-	background-color: #8ba8b7;
-	width: 70%;
-}
 /*****end Supervision page*****/
 
 /*****CV page*****/
@@ -374,6 +362,18 @@ hr {
 	font-weight: 700;
 }
 
+h3 {
+	text-align: center;
+	font-weight: 700;
+}
+
+hr {
+	/*padding-top: 100px; */
+	margin-top: 20px;
+	height: 1px;
+	background-color: #8ba8b7;
+	width: 80%;
+}
 /*****end Publication page*****/
 
 /*****Footer page*****/
@@ -471,8 +471,11 @@ footer div {
 		padding: 0 24px 0 29px;
 	}
 }
-
-
+@media (min-width: 1200px) {
+	hr {
+		margin-top: 60px;
+	}
+}
 
 /*@media (min-width: 500px) and (max-width: 663px) {
 	#home-img-container {
