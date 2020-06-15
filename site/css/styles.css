@@ -378,7 +378,7 @@ a:hover, a:active {
 	position: fixed;
 	left: 0;
 	top: 75px;
-	height: 150px;
+	height: 135.5px;
 	width: 40px;
 
 }
@@ -388,10 +388,10 @@ a:hover, a:active {
 	left: 0;
 	top: 100px;
 	padding: 3px;
-	width: 19.49px;
+	width: 17.4px;
 	vertical-align: middle;
 	color: #000;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	font-weight: 700;
 	border-radius: 0 8px 8px 0;
 	/*background-image: linear-gradient(#8ba8b7, #fff); */
