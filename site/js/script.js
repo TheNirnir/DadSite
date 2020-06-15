@@ -129,10 +129,6 @@ var newsArray =[
 
 var supervisionArray = [
 	{
-		name: "Mor Shpigel-Nacson",
-		content: "Intern (MSc student), Technion."
-	},
-	{
 		name: "Eald Amrani",
 		content: "MSc (joint with Prof. Alex Bronstein), Technion."
 	},
@@ -145,14 +141,6 @@ var supervisionArray = [
 		content: "MSc (joint with Prof. Jacob Goldberger), Haifa University, 2018."
 	},
 	{
-		name: "Ran Ben-Yitshak",
-		content: "Intern (MSc student), Technion, 2017."
-	},
-	{
-		name: "Jeremias Sulam",
-		content: "Intern (PhD student), Technion, 2016."
-	},
-	{
 		name: "Yuval Frommer",
 		content: "MSc (joint with Prof. Nahum Kiryati), Tel-Aviv University, 2015."
 	},
@@ -160,6 +148,21 @@ var supervisionArray = [
 		name: "Tomer Livneh and Dan Smamah",
 		content: "Graduate project, Tel-Aviv University, 2015."
 	}
+];
+
+var internsArray = [
+	{
+		name: "Mor Shpigel-Nacson",
+		content: "Intern (MSc student), Technion."
+	},
+	{
+		name: "Ran Ben-Yitshak",
+		content: "Intern (MSc student), Technion, 2017."
+	},
+	{
+		name: "Jeremias Sulam",
+		content: "Intern (PhD student), Technion, 2016."
+	},
 ];
 
 var publicationsArray = [
@@ -615,7 +618,7 @@ function pageTransformation (pageName) {
 	}
 
 	if (pageName == "Supervision") {
-		buildAndShowSupervision(supervisionArray);
+		buildAndShowSupervision(supervisionArray, internsArray);
 	}
 
 	if (pageName == "News") {
@@ -724,7 +727,7 @@ function buildPublicationsViewHTML(publicationsArray, PublicationsTitleHtml, Pub
 
 		if (j == smallHeaderRow) {
 			// html += "<hr id='hr'>";
-			html += "<hr><h3>In Aerospace Sciences</h3>";
+			html += "<hr><h3 id='publication-h3'>In Aerospace Sciences</h3>";
 		}
 
 		html += "<li>";
@@ -802,16 +805,16 @@ function buildPublicationsViewHTML(publicationsArray, PublicationsTitleHtml, Pub
 	return finalHtml;
 }
 
-function buildAndShowSupervision (supervisionArray) {
+function buildAndShowSupervision (supervisionArray, internsArray) {
 		$ajaxUtils.sendGetRequest(supervisionTitleHtml, function(supervisionTitleHtml) {
 			$ajaxUtils.sendGetRequest(supervisionHtml, function(supervisionHtml) {
-				var SupervisionViewHTML = buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervisionArray);
+				var SupervisionViewHTML = buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervisionArray, internsArray);
 				document.querySelector("#main-content").innerHTML = SupervisionViewHTML;
 			}, false);
 		}, false);
 }
 
-function buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervisionArray) {
+function buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervisionArray, internsArray) {
 	var finalHtml = supervisionTitleHtml;
 
 	for (var j = 0; j<supervisionArray.length;) {
@@ -819,6 +822,22 @@ function buildSupervisionViewHTML(supervisionTitleHtml, supervisionHtml, supervi
 
 		var name = supervisionArray[j].name;
 		var content = supervisionArray[j].content;
+
+		html = insertProperty(html, "name", name);
+		html = insertProperty(html, "content", content);
+
+		finalHtml += html;
+
+		j++;
+	}
+
+	finalHtml += "<h3 id='interns-h3'>Interns</h3>";
+
+	for (var j = 0; j<internsArray.length;) {
+		var html = supervisionHtml;
+
+		var name = internsArray[j].name;
+		var content = internsArray[j].content;
 
 		html = insertProperty(html, "name", name);
 		html = insertProperty(html, "content", content);

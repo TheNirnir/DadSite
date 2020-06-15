@@ -276,7 +276,7 @@ a:hover, a:active {
 /*****Supervision page*****/
 #Supervision-list {
 	list-style-image: url(../images/person-icon.png);
-	padding: 0 20px 0 50px;
+	padding: 0 20px 0 40px;
 }
 
 #Supervision-list li {
@@ -294,6 +294,10 @@ a:hover, a:active {
 #Supervision-list li p span {
 	font-weight: 500;
 	font-size: 1em;
+}
+
+#interns-h3 {
+	padding-right: 20px;
 }
 
 /*****end Supervision page*****/
@@ -413,7 +417,7 @@ footer div {
 	}
 }
 
-@media (max-width: 428px) {
+@media (max-width: 448px) {
 	#Supervision-list li {
 		margin-bottom: 40px;
 	}
