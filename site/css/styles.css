@@ -317,7 +317,12 @@ a:hover, a:active {
 
 #publication-container li {
 	font-size: 1.3em;
+	/*display: block;*/
 	/*margin-top: 10px;*/
+}
+
+#more-padding-publication {
+	padding-top: 150px;
 }
 
 #publication-start-row {
@@ -344,7 +349,8 @@ a:hover, a:active {
 }
 
 #publication-content-row p {
-	padding-top: 30px;
+	/*padding-top: 150px;*/
+	padding-top: 30px
 	/*display: inline-block;*/
 	/*margin-top: 10px;*/
 }
@@ -354,6 +360,7 @@ a:hover, a:active {
 }
 
 #publication-image-container {
+	/*padding: 30px 10px 0 0;*/
 	padding-left: 0;
 }
 
