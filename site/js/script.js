@@ -150,6 +150,14 @@ var supervisionArray = [
 	}
 ];
 
+// import { internsArray } from './Interns-data.js';
+
+// var TempInternsObject;
+// $ajaxUtils.sendGetRequest("../data/Interns-data.json", function (responseText) {
+// 			TempInternsObject = responseText;
+// },);
+// var InternsObject = JSON.parse(TempInternsObject);
+
 var internsArray = [
 	{//3
 		name: "Mor Shpigel-Nacson",
@@ -181,9 +189,9 @@ var publicationsArray = [
 		namesBeforeRami: "E.Amrani,",
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "D. Rotman and A. Bornstein",
-		title: "Evaluation of Combined Artificial Intelligence and Radiologist Assessment to Interpret Screening Mammograms,",
-		linkTo: "#",
-		linkName: " JAMA Network Open, 2020.",
+		title: "Noise Estimation Using Density Estimation for Self-Supervised Multimodal Learning,",
+		linkTo: "https://arxiv.org/abs/2003.03186",
+		linkName: "arXiv, 2020",
 		achievement: "",
 		imageSource: "",
 		abstractContent: ""
@@ -192,9 +200,9 @@ var publicationsArray = [
 		namesBeforeRami: "T. Shaffter et. al.",
 		RamiBenAri: "",
 		namesAfterRami: "",
-		title: "Noise Estimation Using Density Estimation for Self-Supervised Multimodal Learning,",
-		linkTo: "#",
-		linkName: "arXiv, 2020",
+		title: "Evaluation of Combined Artificial Intelligence and Radiologist Assessment to Interpret Screening Mammograms,",
+		linkTo: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2761795",
+		linkName: "JAMA Network Open, 2020.",
 		achievement: "This research has been covered by 22 outlets around the globe, totaling more than 36.6 million earned media impressions by March 2020.",
 		imageSource: "",
 		abstractContent: ""
@@ -215,7 +223,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "T. Hakim and A. Bornstein",
 		title: "Weakly and Semi Supervised Detection in Medical Imaging via Deep Dual Branch Net,",
-		linkTo: "#",
+		linkTo: "https://arxiv.org/abs/1904.12589",
 		linkName: "arXiv, 2019",
 		achievement: "",
 		imageSource: "",
@@ -226,7 +234,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "Y. Shoshan and T. Tlusty",
 		title: "Mammogram Classification with Ordered Loss, Artificial Intelligence in Medicine 2019 (Oral)-20% acceptance rate,",
-		linkTo: "#",
+		linkTo: "OrderedLossAIME2019.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "Nominated for the best paper award.",
 		imageSource: "OrderedLossAIME2019.jpg",
@@ -237,7 +245,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "and J. Goldberger",
 		title: "Classification and detection in mammogram with weak supervision via dual branch deep neural network,ISBI, 2019 (Oral),",
-		linkTo: "#",
+		linkTo: "WeaklyISBI19.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "",
 		imageSource: "isbi2019.jpg",
@@ -248,7 +256,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "",
 		title: "Unsupervised clustering of mammograms for outlier detection and breast density estimation,ICPR 2018,",
-		linkTo: "#",
+		linkTo: "UnsupervisedMG_ICPR2018_CameraReady.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "",
 		imageSource: "icpr2018.jpg",
@@ -259,7 +267,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "",
 		title: "Digital Mammography DREAM Challenge: The Core of Top Performing Methods, IEEE Biomedical and Health Informatics - Special Session, March 2018,",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/BHI_Extended_Abstract.pdf",
 		linkName: "Extended Abstract(PDF)",
 		achievement: "",
 		imageSource: "DM_DREAM_Challenge.jpg",
@@ -281,7 +289,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "A. Akselrod-Ballin, E. Barkan, and P. Kisilev",
 		title: "Mammogram Classification and Abnormality Detection from Nonlocal Labels using Deep Multiple Instance Neural Network Eurographics Workshop on Visual Computing for Biology and Medicine, 2017",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/WeaklyMIL_EGVCBM17_CRC.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "",
 		imageSource: "WeaklyMIL_EGVCBM17_CRC.jpg",
@@ -292,7 +300,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "and P. Kisilev",
 		title: "Maximizing AUC with Deep Learning for Classification of Imbalanced Mammogram Datasets Eurographics Workshop on Visual Computing for Biology and Medicine, 2017",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/MaximizingAUC_MG.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "",
 		imageSource: "MaximizingAUC_MG2.jpg",
@@ -314,7 +322,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "A. Akselrod-Ballin, L. Karlinsky and S. Hashoul",
 		title: "Domain Specific Convolutional Neural Nets for Detection of Architectural Distortion in Mammograms ISBI, 2017",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/AD_Detection_ISBI17_final.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "",
 		imageSource: "ISBI2017_Rami.jpg",
@@ -326,7 +334,7 @@ var publicationsArray = [
 		namesAfterRami: "S. Hashoul and G. Amit",
 		title: "Classification of Breast Lesions using Cross-Modal Deep Learning ISBI 2017",
 		linkTo: "#",
-		linkName: "Paper(PDF)",
+		linkName: "",
 		achievement: "",
 		imageSource: "ISBI2017_Guy.jpg",
 		abstractContent: "Automatic detection and classification of lesions in medical images is a desirable goal of many clinical applications. In breast imaging, multiple modalities such as X-ray, ultrasound and MRI are often used in the diagnostic workflow. Training robust classifiers in each modality is challenging due to the typically small size of the available datasets. We propose to use cross-modal transfer learning to improve the robustness of the classifiers. The potential of this approach was demonstrated on a problem of identifying masses in regions of breast MRI images. Comparison between cross-domain and crossmodal transfer learning showed that the latter improved the classification performance, with overall accuracy of 0.93, similar to de-novo training. Using transfer learning within the medical imaging domain may help to roduce standard pretrained shared models, which can be utilized to solve a variety of specific clinical problems."
@@ -337,7 +345,7 @@ var publicationsArray = [
 		namesAfterRami: "O. Hadad, E. Monovitch, N. Granot and S. Hashoul",
 		title: "Classification of Breast MRI Lesions using Small-Size Training Sets: Comparison to Deep Learning Approaches SPIE-Medical Imaging, 2017",
 		linkTo: "#",
-		linkName: "Paper(PDF)",
+		linkName: "",
 		achievement: "",
 		imageSource: "SPIE2017_Guy.jpg",
 		abstractContent: "Diagnostic interpretation of breast MRI studies requires meticulous work and high expertise. Computerized algorithms may assist radiologists by automatically characterizing the detected lesions. Deep learning approaches have shown promising results in natural image classification, but their applicability to medical imaging is limited by the deficiency of large annotated training sets. In this work, we address automatic classification of breast MRI lesions using two different deep learning approaches. We propose a novel image representation for dynamic contrast enhanced (DCE) breast MRI lesions, which combines the morphological discriminating between benign and malignant lesions: training a designated convolutional neural network and using a pre-trained deep network to extract features for a shallow classifier. The domain-specific trained network provided higher classification accuracy, compared to the pre-trained model, with area under the ROC curve of 0.91 vs. 0.81 and accuracy of 0.83 vs. 0.71. Similar accuracy was achieved in classifying benign lesions, malignant lesions and normal tissue images. The trained network was able to improve by using the multi-channel image representation, and was more robust to reductions in the size of the training set. A small-size convolutional neural network can learn to accurately classify findings in medical images using as little as few hundreds of images from few dozens of patients. With sufficient data augmentation, such network can be trained to outperform a pre-trained out-of-domain classifier. Development of domainspecific deep-learning models for medical imaging may facilitate technological advancements in computeraided diagnosis."
@@ -348,7 +356,7 @@ var publicationsArray = [
 		namesAfterRami: "E. Barkan",
 		title: "A Region Based Convolutional Network for Tumor Detection and Classification in Breast Mammography MICCAI-DLMIA Workshop, 2016",
 		linkTo: "#",
-		linkName: "Paper(PDF)",
+		linkName: "",
 		achievement: "",
 		imageSource: "MICCAI-DLMIA2016_Ayelet.jpg",
 		abstractContent: "This paper addresses the problem of detection and classification of tumors in breast mammograms. We introduce a novel system that integrates several modules including a breast segmentation module, and a fuzzy logic prior anatomical module for fibroglan ular tissue segmentation into a modified faster regionbased convolutional network. Our method is evaluated on a large multi-center clinical dataset and compared to ground truth annotated by expert radiologists. Preliminary experimental results show the high accuracy and efficiency obtained by the suggested network structure. As the volume and complexity of data in healthcare continues to accelerate generalizing such an approach may have a profound impact on patient care in many applications."
@@ -380,7 +388,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari,",
 		namesAfterRami: "A. Zlotnick, S. Hashoul",
 		title: "A Weakly Labeled Approach for Breast Tissue Segmentation and Breast Density Estimation in Digital Mammography, IEEE International Symposium on Bionmedical Imaging (ISBI) 2016.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_BenAri_FG_Segmentation_ISBI16_Final.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "",
 		imageSource: "ISBI2016.jpg",
@@ -391,7 +399,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N. Kiryati",
 		title: "Shape from Focus with Adaptive Focus Measure and High Order Derivatives, BMVC 2015,",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/adaptiveSFF_BMVC15.pdf",
 		linkName: "Paper(PDF)",
 		achievement: "",
 		imageSource: "BMVC15.jpg",
@@ -402,13 +410,13 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "",
 		title: "A Unified Approach for Registration and Depth in Depth from Defocus, IEEE Transactions on Pattern Analysis and Machine Intelligence, 36(6), pp. 1041-1055, 2014.",
-		linkTo: "#",
+		linkTo: "https://ieeexplore.ieee.org/document/6702415?tp=&arnumber=6702415&url=http:%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6702415",
 		linkName: "Publisher Link,",
-		link2To: "#",
+		link2To: "https://www.cs.bgu.ac.il/~rba/Papers/RBenAri_dfd_TPAMI14.pdf",
 		link2Name: "Paper(PDF),",
-		link3To: "#",
+		link3To: "https://www.cs.bgu.ac.il/~rba/Papers/supplementaryMaterial_TPAMI14",
 		link3Name: "Supplementary Material(PDF),",
-		link4To: "#",
+		link4To: "https://www.cs.bgu.ac.il/~rba/dfd/DFDProjectPage.html",
 		link4Name: "Project Page.",
 		achievement: "Editor's selection for spotlight paper",
 		imageSource: "web_teaserdfd_regis.png",
@@ -419,8 +427,8 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and O. Ben-Shahar",
 		title: "A computationally efficient tracker with direct appearance-kinematic measure and adaptive Kalman filter, Journal of Real-Time Image Processing, online March 2013.",
-		linkTo: "#",
-		linkName: "Preprint(PDF)",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_JRTIP2013.pdf",
+		linkName: "Preprint(PDF),",
 		link2To: "#",
 		link2Name: "Project Page",
 		achievement: "",
@@ -432,9 +440,9 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and G. Raveh",
 		title: "Variational Depth from Defocus in Real-Time, The 3rd IEEE Workshop on GPU for Computer Vision ICCV, pp. 522-529, November 2011, Barcelona.",
-		linkTo: "#",
-		linkName: "Preprint(PDF)",
-		link2To: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_BenAri_PrePrint_ICCV11.pdf",
+		linkName: "Preprint(PDF),",
+		link2To: "https://www.cs.bgu.ac.il/~rba/Papers/R_BenAri_Presen_ICCV11.pdf",
 		link2Name: "Presentation(PDF)",
 		achievement: "",
 		imageSource: "DFD_set.jpg",
@@ -445,7 +453,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "",
 		title: "Image de-noising by Bayesian regression, 16th Int. Conference on Image Analysis and Processing (ICIAP), September 2011, Italy",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/Bayesian_Denoising_v7.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "",
 		imageSource: "Denoising_set.jpg",
@@ -467,7 +475,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N. Sochen",
 		title: "Stereo Matching with Mumford-Shah Regularization and Occlusion Handling, IEEE Transactions on Pattern Analysis and Machine Intelligence, 32(11), pp. 2071-2084, 2010.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_Stereo_TPAMI10.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "Editor's selection for spotlight paper on the TPAMI Nov. 2010 Edition.<br>Performance ranked 4th out of 55 in the Middlebury Benchmark of Feb 2009, (Algo. VarMSOH - error threshold=0.5).",
 		imageSource: "Stereo_TPAMI10.jpg",
@@ -489,7 +497,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N.Sochen",
 		title: "A Geometric Framework and a New Criterion in Optical Flow Modeling, Journal of Mathematical Imaging and Vision, 33(2), pp. 178-194, February 2009.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_Aligned_OF_JMIV09.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "",
 		imageSource: "OF_JMIV09.jpg",
@@ -500,7 +508,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N.Sochen",
 		title: "A Geometric Framework for Regularization of the Data Term in Stereo Vision, Journal of Mathematical Imaging and Vision, 331(1), pp. 17-33, May 2008.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_RegDataTerm_JMIV08.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "",
 		imageSource: "Stereo_JMIV08.jpg",
@@ -511,7 +519,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and D. Aiger",
 		title: "Geodesic Active Contours with Combined Shape and Appearance Priors, In Proc. Advanced Concepts in Intelligent Vision Systems (ACIVS), vol. 5259 of LNCS, pp. 494-505, 2008.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_ACIVS08.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "",
 		imageSource: "ACIVS08.jpg",
@@ -522,7 +530,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N. Sochen",
 		title: "Variational Stereo Vision with Sharp Discontinuities and Occlusion Handling, In Proc. IEEE International Conference on Computer Vision (ICCV), pp. 1-7, 2007.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_ICCV07.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "",
 		imageSource: "ICCV07.jpg",
@@ -533,7 +541,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N. Sochen",
 		title: "A General Framework and New Alignment Criterion for Dense Optical Flow, In Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), vol. 1, pp. 529-536, 2006.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_CVPR06.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "",
 		imageSource: "CVPR06.jpg",
@@ -544,7 +552,7 @@ var publicationsArray = [
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and N. Sochen",
 		title: "Non-Isotropic Regularization of the Correspondence Space in Stereo Vision, In Proc. Int. Conference in Pattern Recognition (ICPR), vol. 4, pp. 293-296, 2004.",
-		linkTo: "#",
+		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_ICPR04.pdf",
 		linkName: "Preprint(PDF)",
 		achievement: "",
 		imageSource: "ICPR04.jpg",
@@ -599,6 +607,8 @@ var i = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	pageTransformation('Home');
+
+	NirFunction(event);
 });
 
 function pageTransformation (pageName) {
@@ -663,6 +673,12 @@ function newsOrderFunction (i) {
 		}
 		else {
 			newsOrderArray[j] = i - 6; //i - newsArray.length
+			if (newsOrderArray[j] > 5) {
+				newsOrderArray[j] = newsOrderArray[j] - 6;
+			}
+			if (newsOrderArray[j] > 5) {
+				newsOrderArray[j] = newsOrderArray[j] - 6;
+			}
 		}
 		i++;
 		j++;
@@ -920,6 +936,23 @@ function buildNewsViewHTML(NewsTitleHtml, NewsHtml, newsArray) {
 	finalHtml += "</ul></div>";
 	return finalHtml;
 }
+
+
+// function NirFunction (event) {
+// 	var x;
+// 	// console.log(x);
+// 	if (x != undefined) {
+// 		x = event.keyCode;
+// 	}
+//   	else {
+//   		setTimeout(NirFunction(event), 1000)
+//   	}
+//   	if (x == 110) {  // 110 is the n key   105 is the i key   114 is the r key
+//     alert ("You pressed the n key!");
+//   }
+// }
+
+
 // function CVfunction () {
 // 	if (confirm("The CV file will be downloaded to your computer as a PDF file")) {
 // 		alert("Great. You're OK with it");
