@@ -1,4 +1,6 @@
-export const internsArray = [
+// export const
+
+var internsArray = [
 	{//3
 		name: "Mor Shpigel-Nacson",
 		content: "Intern (MSc student), Technion."
@@ -12,3 +14,5 @@ export const internsArray = [
 		content: "Intern (PhD student), Technion, 2016."
 	},
 ];
+
+// var x = 8;
