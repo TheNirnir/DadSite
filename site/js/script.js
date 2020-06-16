@@ -608,7 +608,7 @@ var i = 0;
 document.addEventListener("DOMContentLoaded", function (event) {
 	pageTransformation('Home');
 
-	NirFunction(event);
+	// NirFunction(event);
 });
 
 function pageTransformation (pageName) {
