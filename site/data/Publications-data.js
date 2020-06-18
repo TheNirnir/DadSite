@@ -241,7 +241,7 @@ var publicationsArray = [
 		link2Name: "Paper(PDF),",
 		link3To: "https://www.cs.bgu.ac.il/~rba/Papers/supplementaryMaterial_TPAMI14",
 		link3Name: "Supplementary Material(PDF),",
-		link4To: "https://www.cs.bgu.ac.il/~rba/dfd/DFDProjectPage.html",
+		link4To: "ProjectPageDFD.html",// "https://www.cs.bgu.ac.il/~rba/dfd/DFDProjectPage.html", "data/Publications/ProjectPages/DFD/DFDProjectPage.html"
 		link4Name: "Project Page.",
 		achievement: "Editor's selection for spotlight paper",
 		imageSource: "web_teaserdfd_regis.png",
@@ -254,7 +254,7 @@ var publicationsArray = [
 		title: "A computationally efficient tracker with direct appearance-kinematic measure and adaptive Kalman filter, Journal of Real-Time Image Processing, online March 2013.",
 		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_JRTIP2013.pdf",
 		linkName: "Preprint(PDF),",
-		link2To: "#",
+		link2To: "data/Publications/ProjectPages/Tracking/Project.html",
 		link2Name: "Project Page",
 		achievement: "",
 		imageSource: "DallasCarChase.gif",

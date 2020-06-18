@@ -597,11 +597,17 @@
 var PublicationsTitleHtml = "snippets/Publications-title-snippet.html";
 var PublicationsFirstRowHtml = "snippets/Publication-first-row-snippet.html";
 var PublicationsOptionalRowHtml = "snippets/Publication-optional-row-snippet.html"
-var HomeNewsHtml = "snippets/News-list-snippet.html";
 var supervisionTitleHtml = "snippets/Supervision-title-snippet.html";
 var supervisionHtml = "snippets/Supervision-snippet.html";
 var NewsTitleHtml = "snippets/News-title-snippet.html";
 var NewsHtml = "snippets/News-snippet.html";
+var HomeFirstHtml = "snippets/Home-first-snippet.html";
+var HomeNewsHtml = "snippets/News-list-snippet.html";
+var HomeSecondHtml = "snippets/Home-second-snippet.html";
+var HomePressActivitiesHtml = "snippets/Press-activities-snippet.html";
+var HomeThirdHtml = "snippets/Home-third-snippet.html";
+var HomeEndingHtml = "snippets/Home-ending-snippet.html";
+
 var newsInterval;
 var i = 0;
 
@@ -618,32 +624,35 @@ function pageTransformation (pageName) {
 	document.querySelector("#" + pageName + "-option").className = "page-on";
 	if (pageName == "Home") {
 		i = 0;
-		$ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
-			document.querySelector("#main-content").innerHTML = responseText;
-		},
-		false);
-		waitForNewsToDisplay("#home-news-list", 100, newsArray);
-		function waitForNewsToDisplay(selector, time, newsArray) {
-	        if(document.querySelector(selector)!=null) {
-	        	var newsOrder = newsOrderFunction(i);
-				buildAndShowHomeNews(newsArray, newsOrder);
-				newsInterval = setInterval(function () {
-					var newsOrder = newsOrderFunction(i);
-					// console.log(newsOrder);
-					buildAndShowHomeNews(newsArray, newsOrder);
-					i++;
-					if (i == newsArray.length) {
-						i = 0;
-					}
-				}, 3000)
-	            return;
-	        }
-	        else {
-	            setTimeout(function() {
-	                waitForNewsToDisplay(selector, time, newsArray);
-	            }, time);
-	        }
-	    }
+
+		buildAndShowHome(HomeObj, newsArray);
+
+		// $ajaxUtils.sendGetRequest("snippets/" + pageName + "-snippet.html", function (responseText) {
+		// 	document.querySelector("#main-content").innerHTML = responseText;
+		// },
+		// false);
+		// waitForNewsToDisplay("#home-news-list", 100, newsArray);
+		// function waitForNewsToDisplay(selector, time, newsArray) {
+	 //        if(document.querySelector(selector)!=null) {
+	 //        	// var newsOrder = newsOrderFunction(i);
+		// 		buildAndShowHomeNews(newsArray);
+		// 		newsInterval = setInterval(function () {
+		// 			// var newsOrder = newsOrderFunction(i);
+		// 			// console.log(newsOrder);
+		// 			buildAndShowHomeNews(newsArray);
+		// 			i++;
+		// 			if (i == newsArray.length) {
+		// 				i = 0;
+		// 			}
+		// 		}, 3000)
+	 //            return;
+	 //        }
+	 //        else {
+	 //            setTimeout(function() {
+	 //                waitForNewsToDisplay(selector, time, newsArray);
+	 //            }, time);
+	 //        }
+	 //    }
 	}
 
 	if (pageName == "CV") {
@@ -689,20 +698,36 @@ function newsOrderFunction (i) {
 	// buildAndShowHomeNews(newsArray, newsOrderArray);
 }
 
+function NewsInterval (newsArray) {
+	buildAndShowHomeNews(newsArray);
+	newsInterval = setInterval(function () {
+		buildAndShowHomeNews(newsArray);
+		i++;
+		if (i == newsArray.length) {
+			i = 0;
+		}
+	}, 3000)
+}
+
 function insertProperty (string, propName, propValue) {
+	// console.log(string, propName, propValue);
 	var propToReplace = "{{" + propName + "}}";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	return string;
 }
 
-function buildAndShowHomeNews (newsArray, newsOrder) {
+function buildAndShowHomeNews (newsArray) {
+		var newsOrder = newsOrderFunction(i);
 		$ajaxUtils.sendGetRequest(HomeNewsHtml, function(HomeNewsHtml) {
 			var NewsViewHTML = buildHomeNewsViewHTML(newsArray, HomeNewsHtml, newsOrder);
 			document.querySelector("#home-news-list").innerHTML = NewsViewHTML;
+			// console.log(NewsViewHTML);
+			// return NewsViewHTML;
 		}, false);
 }
 
 function buildHomeNewsViewHTML(newsArray, HomeNewsHtml, newsOrder) {
+	// console.log(newsArray, HomeNewsHtml, newsOrder);
 	var finalHtml = "";
 
 	// console.log(newsOrder);
@@ -749,6 +774,8 @@ function buildHomeNewsViewHTML(newsArray, HomeNewsHtml, newsOrder) {
 		// k = j;
 		// k++;
 	}
+
+	// console.log(finalHtml);
 
 	return finalHtml;
 }
@@ -937,8 +964,149 @@ function buildNewsViewHTML(NewsTitleHtml, NewsHtml, newsArray) {
 	finalHtml += "</ul></div>";
 	return finalHtml;
 }
+// 
+function buildAndShowHome (HomeObj, newsArray) {
+		$ajaxUtils.sendGetRequest(HomeFirstHtml, function(HomeFirstHtml) {
+			$ajaxUtils.sendGetRequest(HomeNewsHtml, function(HomeNewsHtml) {
+				$ajaxUtils.sendGetRequest(HomeSecondHtml, function(HomeSecondHtml) {
+					$ajaxUtils.sendGetRequest(HomePressActivitiesHtml, function(HomePressActivitiesHtml) {
+						$ajaxUtils.sendGetRequest(HomeThirdHtml, function(HomeThirdHtml) {
+							$ajaxUtils.sendGetRequest(HomeEndingHtml, function(HomeEndingHtml) {
+								var HomeViewHTML = buildHomeViewHTML(HomeObj, newsArray, HomeFirstHtml, HomeNewsHtml, HomeSecondHtml, HomePressActivitiesHtml, HomeThirdHtml, HomeEndingHtml);
+								document.querySelector("#main-content").innerHTML = HomeViewHTML;
+							}, false);
+						}, false);
+					}, false);
+				}, false);
+			}, false);
+		}, false);
+}
 
+function buildHomeViewHTML(HomeObj, newsArray, HomeFirstHtml, HomeNewsHtml, HomeSecondHtml, HomePressActivitiesHtml, HomeThirdHtml, HomeEndingHtml) {
+	var finalHtml = HomeFirstHtml;
 
+	var aboveImageContent = HomeObj.aboveImageContent;
+	// console.log(aboveImageContent);
+	var imageSource = HomeObj.imageSource;
+	var about = HomeObj.about;
+	var linksStartContent = HomeObj.linksStartContent;
+
+	var link1To = HomeObj.link1To;
+	var link1Name = HomeObj.link1Name;
+	var links1Content = HomeObj.links1Content;
+
+	var link2To = HomeObj.link2To;
+	var link2Name = HomeObj.link2Name;
+	var links2Content = HomeObj.links2Content;
+
+	var link3To = HomeObj.link3To;
+	var link3Name = HomeObj.link3Name;
+	var links3Content = HomeObj.links3Content;
+
+	var link4To = HomeObj.link4To;
+	var link4Name = HomeObj.link4Name;
+	var links4Content = HomeObj.links4Content;
+
+	var link5To = HomeObj.link5To;
+	var link5Name = HomeObj.link5Name;
+
+	var contactStartContent = HomeObj.contactStartContent;
+	var firstContact = HomeObj.firstContact;
+	var secondContact = HomeObj.secondContact;
+	var thirdContact = HomeObj.thirdContact;
+	var fourthContact = HomeObj.fourthContact;
+	var fifthContact = HomeObj.fifthContact;
+
+	finalHtml = insertProperty(finalHtml, "aboveImageContent", aboveImageContent);
+	finalHtml = insertProperty(finalHtml, "imageSource", imageSource);
+	finalHtml = insertProperty(finalHtml, "about", about);
+	finalHtml = insertProperty(finalHtml, "linksStartContent", linksStartContent);
+
+	finalHtml = insertProperty(finalHtml, "lin1To", link1To);
+	finalHtml = insertProperty(finalHtml, "link1Name", link1Name);
+	finalHtml = insertProperty(finalHtml, "links1Content", links1Content);
+
+	finalHtml = insertProperty(finalHtml, "link2To", link2To);
+	finalHtml = insertProperty(finalHtml, "link2Name", link2Name);
+	finalHtml = insertProperty(finalHtml, "links2Content", links2Content);
+
+	finalHtml = insertProperty(finalHtml, "link3To", link3To);
+	finalHtml = insertProperty(finalHtml, "link3Name", link3Name);
+	finalHtml = insertProperty(finalHtml, "links3Content", links3Content);
+
+	finalHtml = insertProperty(finalHtml, "link4To", link4To);
+	finalHtml = insertProperty(finalHtml, "link4Name", link4Name);
+	finalHtml = insertProperty(finalHtml, "links4Content", links4Content);
+
+	finalHtml = insertProperty(finalHtml, "link5To", link5To);
+	finalHtml = insertProperty(finalHtml, "link5Name", link5Name);
+
+	finalHtml = insertProperty(finalHtml, "contactStartContent", contactStartContent);
+	finalHtml = insertProperty(finalHtml, "firstContact", firstContact);
+	finalHtml = insertProperty(finalHtml, "secondContact", secondContact);
+	finalHtml = insertProperty(finalHtml, "thirdContact", thirdContact);
+	finalHtml = insertProperty(finalHtml, "fourthContact", fourthContact);
+	finalHtml = insertProperty(finalHtml, "fifthContact", fifthContact);
+
+	// var NewsViewHTML = buildAndShowHomeNews(newsArray);
+	// console.log(NewsViewHTML);
+	// finalHtml += buildAndShowHomeNews(newsArray);
+
+	var newsOrder = newsOrderFunction(i);
+	var NewsViewHTML = buildHomeNewsViewHTML(newsArray, HomeNewsHtml, newsOrder);
+	finalHtml += NewsViewHTML;
+
+	finalHtml += HomeSecondHtml;
+
+	for (var j = 0; j<HomeObj.pressActivities.length;) {
+		var html = HomePressActivitiesHtml;
+
+		var linkTo = HomeObj.pressActivities[j].linkTo;
+		var linkName = HomeObj.pressActivities[j].linkName;
+
+		html = insertProperty(html, "linkTo", linkTo);
+		html = insertProperty(html, "linkName", linkName);
+
+		finalHtml += html;
+
+		j++;
+	}
+
+	finalHtml += HomeThirdHtml;
+
+	for (var j = 0; j<HomeObj.ResearchInterests.length;) {
+		var html = "<li>";
+
+		if (typeof HomeObj.ResearchInterests[j] === "object") {
+			// console.log("I'm in");
+			html += HomeObj.ResearchInterests[j].title;
+			html += "<ul>";
+
+			for (var l = 0; l < HomeObj.ResearchInterests[j].list.length;) {
+				html += "<li>";
+				html += HomeObj.ResearchInterests[j].list[l];
+				html += "</li>";
+
+				l++;
+			}
+
+			html += "</ul>";
+		}
+		else {
+			html += HomeObj.ResearchInterests[j];
+		}
+
+		html += "</li>";
+
+		finalHtml += html;
+
+		j++;
+	}
+
+	finalHtml += HomeEndingHtml;
+	NewsInterval(newsArray);
+	return finalHtml;
+}
 // function NirFunction (event) {
 // 	var x;
 // 	// console.log(x);

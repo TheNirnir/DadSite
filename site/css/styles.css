@@ -134,6 +134,7 @@ ul#menu-bar {
 h2 {
 	text-align: center;
 	margin: 0 0 20px;
+	clear: both;
 }
 
 a:link, a:visited {
@@ -457,6 +458,57 @@ hr {
 	width: 80%;
 }
 /*****end Publication page*****/
+
+#DFD-title {
+	margin: 25px auto -10px;
+}
+
+#DFD-container h2 {
+	margin-top: 15px;
+}
+
+.DFD-img-container {
+	padding: 0 10px;
+	margin: 10px 0;
+}
+
+.DFD-img-container div {
+	position: relative;
+}
+
+.DFD-img-container img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.DFD-img-container span {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 3px 10px; 
+	background-color: #000;
+	color: #fff;
+	opacity: .7;
+	font-size: 1.2em;
+}
+
+
+#DFD-abstract, #DFD-above-content, #DFD-data-content {
+	font-size: 1.2em;
+}
+
+#DFD-data-content span, #DFD-Acknowledgment span, #DFD-above-content span {
+	font-weight: bold;
+}
+
+#DFD-Acknowledgment {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
 
 /*****Footer page*****/
 footer {
