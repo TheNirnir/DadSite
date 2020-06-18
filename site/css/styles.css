@@ -468,12 +468,15 @@ hr {
 }
 
 .DFD-img-container {
-	padding: 0 10px;
+	padding: 0 15px;
 	margin: 10px 0;
 }
 
 .DFD-img-container div {
 	position: relative;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .DFD-img-container img {
@@ -497,8 +500,13 @@ hr {
 }
 
 
-#DFD-abstract, #DFD-above-content, #DFD-data-content {
+#DFD-abstract, #DFD-above-content, #DFD-data-content, #DFD-real-data {
 	font-size: 1.2em;
+}
+
+#DFD-real-data {
+	margin: -10px 0 10px;
+	text-align: center;
 }
 
 #DFD-data-content span, #DFD-Acknowledgment span, #DFD-above-content span {
