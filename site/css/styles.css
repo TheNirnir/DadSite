@@ -470,6 +470,7 @@ hr {
 .DFD-img-container {
 	padding: 0 15px;
 	margin: 10px 0;
+	text-align: center;
 }
 
 .DFD-img-container div {
@@ -479,12 +480,20 @@ hr {
 }
 
 .DFD-img-container img {
-	/*width: 100%;*/
-	width: 50%;
+	width: 100%;
+	/*width: 50%;*/
 	height: auto;
 	margin: 0;
 	vertical-align: bottom;
 }
+
+img.DFD-real-data-img {
+	width: 50%;
+}
+
+/*img.DFD-gif {
+	height: 211.63px;
+}*/
 
 .DFD-img-container span {
 	display: block;
@@ -517,6 +526,18 @@ hr {
 #DFD-Acknowledgment {
 	margin-top: 10px;
 	font-size: 1.2em;
+}
+
+div.DFD-3-img span {
+	width: 33.3333333333%;
+}
+
+span.DFD-2-span {
+	left: 33.3333333333%;
+}
+
+span.DFD-3-span {
+	left: 66.6666666667%;
 }
 
 /*****Footer page*****/
@@ -647,6 +668,18 @@ footer div {
 @media (min-width: 1200px) {
 	hr {
 		margin-top: 60px;
+	}
+}
+
+@media (max-width: 485px) {
+	span.DFD-1-span, span.DFD-3-span, span.DFD-2-span {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 363px) {
+	span.DFD-1-span, span.DFD-3-span, span.DFD-2-span {
+		font-size: 0.65em;
 	}
 }
 
