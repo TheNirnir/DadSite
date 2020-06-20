@@ -463,7 +463,7 @@ hr {
 	margin: 25px auto -10px;
 }
 
-#DFD-container h2 {
+#DFD-container h2, #Tracking-container h2 {
 	margin-top: 15px;
 }
 
@@ -491,9 +491,9 @@ img.DFD-real-data-img {
 	width: 50%;
 }
 
-/*img.DFD-gif {
-	height: 211.63px;
-}*/
+img.DFD-gif {
+	width: 50%;
+}
 
 .DFD-img-container span {
 	display: block;
@@ -510,7 +510,7 @@ img.DFD-real-data-img {
 }
 
 
-#DFD-abstract, #DFD-above-content, #DFD-data-content, #DFD-real-data {
+#DFD-abstract, #DFD-above-content, #DFD-data-content, #DFD-real-data, #Tracking-abstract {
 	font-size: 1.2em;
 }
 

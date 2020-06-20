@@ -254,7 +254,7 @@ var publicationsArray = [
 		title: "A computationally efficient tracker with direct appearance-kinematic measure and adaptive Kalman filter, Journal of Real-Time Image Processing, online March 2013.",
 		linkTo: "https://www.cs.bgu.ac.il/~rba/Papers/R_Ben-Ari_JRTIP2013.pdf",
 		linkName: "Preprint(PDF),",
-		link2To: "data/Publications/ProjectPages/Tracking/Project.html",
+		link2To: "ProjectPageTracking.html",// data/Publications/ProjectPages/Tracking/Project.html
 		link2Name: "Project Page",
 		achievement: "",
 		imageSource: "DallasCarChase.gif",
