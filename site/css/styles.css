@@ -459,27 +459,27 @@ hr {
 }
 /*****end Publication page*****/
 
-#DFD-title {
+#ProjectPage-title {
 	margin: 25px auto -10px;
 }
 
-#DFD-container h2, #Tracking-container h2 {
+#ProjectPage-container h2 {
 	margin-top: 15px;
 }
 
-.DFD-img-container {
+.ProjectPage-img-container {
 	padding: 0 15px;
 	margin: 10px 0;
 	text-align: center;
 }
 
-.DFD-img-container div {
+.ProjectPage-img-container div {
 	position: relative;
 	/*width: 50%;*/
 	display: inline-block;
 }
 
-.DFD-img-container img {
+.ProjectPage-img-container img, .ProjectPage-img-container video {
 	width: 100%;
 	/*width: 50%;*/
 	height: auto;
@@ -487,11 +487,11 @@ hr {
 	vertical-align: bottom;
 }
 
-img.DFD-real-data-img, img.DFD-gif {
+img.ProjectPage-real-data-img, img.ProjectPage-gif {
 	width: 50%;
 }
 
-.DFD-img-container span {
+.ProjectPage-img-container span {
 	display: block;
 	width: 100%;
 	position: absolute;
@@ -506,7 +506,7 @@ img.DFD-real-data-img, img.DFD-gif {
 }
 
 
-#DFD-abstract, #DFD-above-content, #DFD-data-content, #DFD-real-data, #Tracking-abstract {
+#ProjectPage-abstract, #ProjectPage-above-content, #ProjectPage-data-content, #DFD-real-data {
 	font-size: 1.2em;
 }
 
@@ -515,7 +515,7 @@ img.DFD-real-data-img, img.DFD-gif {
 	text-align: center;
 }
 
-#DFD-data-content span, #DFD-Acknowledgment span, #DFD-above-content span {
+#ProjectPage-data-content span, #DFD-Acknowledgment span, #ProjectPage-above-content span {
 	font-weight: bold;
 }
 

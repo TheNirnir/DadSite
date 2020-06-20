@@ -24,22 +24,97 @@
 	<header>
 		<nav class="navbar navbar-default">
 			<div id="header-container" class="container">
-				<h1 id="DFD-title">Tracking with joint kinematic&ndash;appearance matching</h1>
+				<h1 id="ProjectPage-title">Tracking with joint kinematic&ndash;appearance matching</h1>
 			</div>
 		</nav>
 	</header>
 	<div id="main-content">
-		<div id="Tracking-container" class="container">
+		<div id="ProjectPage-container" class="container">
 
 			<h3>A computationally efficient visual tracking with joint kinematic-appearance matching and adaptive&nbsp;Kalman&nbsp;filter</h3>
 
 			<h2>Abstract</h2>
-			<div id="Tracking-abstract">Visual tracking is considered a common procedure in many applications with high demand for real-time execution. Real-life systems are required to track objects under lighting changes, dynamic viewing angle, image noise and occlusions to name a few. Even though the challenging vision conditions, these methods should require extremely low computational resources, therefore posing a trade-off between robustness and speed.  Emergence of new consumer level cameras capable of capturing HD video in 60 fps raise a new challenge for modern tracking methods.<br>
+			<div id="ProjectPage-abstract">Visual tracking is considered a common procedure in many applications with high demand for real-time execution. Real-life systems are required to track objects under lighting changes, dynamic viewing angle, image noise and occlusions to name a few. Even though the challenging vision conditions, these methods should require extremely low computational resources, therefore posing a trade-off between robustness and speed.  Emergence of new consumer level cameras capable of capturing HD video in 60 fps raise a new challenge for modern tracking methods.<br>
 			Unfortunately, state-of-the-art tracking techniques struggle to meet frame rates over 30 fps, often for VGA resolution with standard desktop power, let alone on mobile devices seldom reaching equivalent computational capability. In this paper we suggest a significantly low computational method for tracking in color video clips that improves the tracking performance in terms of robustness/speed trade-off.<br>
 			The suggested approach employs a novel similarity measure explicitly combining appearance with object kinematics and a new adaptive Kalman filter extends this robustness to cope with occlusions and noise. The linear complexity of this method is reflected in computational efficiency and demonstrated by high processing rate. Comparisons to two recent trackers show superior  performance in terms of robustness while being in excess of 5 times faster.  Finally, the high speed performance has been obtained without any unique hardware optimization, solely based on a standard C/C++ implementation using built in OpenCV functions.</div>
 
 			<h2>New</h2>
-			<div><img src="data/Publications/ProjectPages/Tracking/jaccuzi_ResTowel.mpg"></div>
+			<div><!-- <img src="data/Publications/ProjectPages/Tracking/jaccuzi_ResTowel.mp4"> -->
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/jaccuzi_ResTowel.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+
+			<h2>Distraction</h2>
+			<div class="ProjectPage-img-container col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/RealMovie7_Res_HSV_NMR.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/RealMovie7_Res_HSV_WMR.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+
+			<h2>Single Object Tracking</h2>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/pes09_445_513.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/narrowoccl2_res.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/distracted_pen_noised.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/ngsim.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/dallaspolice_dynamtemplate.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/darpa_vehicle.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+
+			<h2>Multi Object Tracking</h2>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-12">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/RealMovie7_Res_HSV_NMR.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/RealMovie7_Res_HSV_NMR.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-sm-4 col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/RealMovie7_Res_HSV_NMR.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/RealMovie7_Res_HSV_NMR.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
+			<div class="ProjectPage-img-container col-xs-6">
+				<video autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls">
+	    			<source src='data/Publications/ProjectPages/Tracking/RealMovie7_Res_HSV_NMR.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				</video>
+			</div>
 
 		</div>
 	</div>
