@@ -487,11 +487,7 @@ hr {
 	vertical-align: bottom;
 }
 
-img.DFD-real-data-img {
-	width: 50%;
-}
-
-img.DFD-gif {
+img.DFD-real-data-img, img.DFD-gif {
 	width: 50%;
 }
 
