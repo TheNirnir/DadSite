@@ -1,4 +1,11 @@
 var newsArray =[
+	{//19
+		date: "June 2020",
+		startContent: 'Put Ai to work - IBM event:',
+		linkTo: '#',
+		linkName: 'Video-AI.',
+		continueContent: ''
+	},
 	{//18
 		date: "April 2020",
 		startContent: 'New arXiv paper:',
