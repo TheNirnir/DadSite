@@ -459,12 +459,21 @@ hr {
 }
 /*****end Publication page*****/
 
-#ProjectPage-title {
-	margin: 25px auto -10px;
+.ProjectPage-title {
+	margin: 35px auto -10px;
+}
+
+#Tracking-title {
+	font-size: 2.3em;
+	margin-top: 20px;
+}
+
+#Tracking-h3 {
+	font-size: 1.4em;
 }
 
 #ProjectPage-container h2 {
-	margin-top: 15px;
+	margin-top: 20px;
 }
 
 .ProjectPage-img-container {
@@ -520,8 +529,12 @@ img.ProjectPage-real-data-img, img.ProjectPage-gif {
 }
 
 
-#ProjectPage-abstract, #ProjectPage-above-content, #ProjectPage-data-content, #DFD-real-data, #Tracking-Dynamic-target-appearance {
+#ProjectPage-abstract, #ProjectPage-above-notes-content, #ProjectPage-data-content, #DFD-real-data, #Tracking-Dynamic-target-appearance {
 	font-size: 1.2em;
+}
+
+#ProjectPage-above-notes-content {
+	margin-top: 10px;
 }
 
 #DFD-real-data {
@@ -529,7 +542,7 @@ img.ProjectPage-real-data-img, img.ProjectPage-gif {
 	text-align: center;
 }
 
-#ProjectPage-data-content span, #DFD-Acknowledgment span, #ProjectPage-above-content span {
+#ProjectPage-data-content span, #DFD-Acknowledgment span, #ProjectPage-above-notes-content span {
 	font-weight: bold;
 }
 

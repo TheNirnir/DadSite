@@ -24,26 +24,31 @@
 	<header>
 		<nav class="navbar navbar-default">
 			<div id="header-container" class="container">
-				<h1 id="ProjectPage-title">Tracking with joint kinematic&ndash;appearance matching</h1>
+				<h1 id="Tracking-title" class="ProjectPage-title">Tracking with joint kinematic&ndash;appearance matching</h1>
 			</div>
 		</nav>
 	</header>
 	<div id="main-content">
 		<div id="ProjectPage-container" class="container">
 
-			<h3>A computationally efficient visual tracking with joint kinematic-appearance matching and adaptive&nbsp;Kalman&nbsp;filter</h3>
+			<h3 id="Tracking-h3">A computationally efficient visual tracking with joint kinematic-appearance matching and adaptive&nbsp;Kalman&nbsp;filter</h3>
 
 			<h2>Abstract</h2>
 			<div id="ProjectPage-abstract">Visual tracking is considered a common procedure in many applications with high demand for real-time execution. Real-life systems are required to track objects under lighting changes, dynamic viewing angle, image noise and occlusions to name a few. Even though the challenging vision conditions, these methods should require extremely low computational resources, therefore posing a trade-off between robustness and speed.  Emergence of new consumer level cameras capable of capturing HD video in 60 fps raise a new challenge for modern tracking methods.<br>
 			Unfortunately, state-of-the-art tracking techniques struggle to meet frame rates over 30 fps, often for VGA resolution with standard desktop power, let alone on mobile devices seldom reaching equivalent computational capability. In this paper we suggest a significantly low computational method for tracking in color video clips that improves the tracking performance in terms of robustness/speed trade-off.<br>
 			The suggested approach employs a novel similarity measure explicitly combining appearance with object kinematics and a new adaptive Kalman filter extends this robustness to cope with occlusions and noise. The linear complexity of this method is reflected in computational efficiency and demonstrated by high processing rate. Comparisons to two recent trackers show superior  performance in terms of robustness while being in excess of 5 times faster.  Finally, the high speed performance has been obtained without any unique hardware optimization, solely based on a standard C/C++ implementation using built in OpenCV functions.</div>
 
-			<h2>New</h2>
+			<h2>Exampels</h2>
 			<div class="ProjectPage-img-container ProjectPage-50p-video col-md-6 col-sm-9 col-xs-12">
-				<video autobuffer="autobuffer" loop="loop" controls="controls"> <!-- autoplay="autoplay" -->
-	    			<source src='data/Publications/ProjectPages/Tracking/jaccuzi_ResTowel.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-				</video>
+				<div>
+					<video autobuffer="autobuffer" loop="loop" controls="controls"> <!-- autoplay="autoplay" -->
+		    			<source src='data/Publications/ProjectPages/Tracking/jaccuzi_ResTowel.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					</video>
+					<span class="Tracking-span">Jacuzzi</span>
+				</div>
 			</div>
+			<div id="ProjectPage-above-notes-content"><span>Notes: </span>The sequence is courtesy of Yoav Schechner, first appeared in: A. Alterman, Y.Y. Schechner, P. Perona and J. Shamir, “Detecting Motion Through Dynamic Refractio”, TPAMI, 35(1), pp. 245-251, Jan. 2013. It was captured by an underwater camera in a pool; looking out of the water surface. The waves are therefore a natural water distortions.<br>
+			This sequence was further demonstrated as a challenging tracking case by S. Oron, tackled by “Locally Orderless Tracking” method published in CVPR 2012.</div>
 
 			<h2>Distraction</h2>
 			<div class="ProjectPage-img-container col-xs-6">
