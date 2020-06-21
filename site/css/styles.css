@@ -491,7 +491,21 @@ img.ProjectPage-real-data-img, img.ProjectPage-gif {
 	width: 50%;
 }
 
-.ProjectPage-img-container span {
+/*.ProjectPage-img-container span {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding: 3px 10px; 
+	background-color: #000;
+	color: #fff;
+	opacity: .7;
+	font-size: 1.2em;
+}*/
+
+.DFD-span {
 	display: block;
 	width: 100%;
 	position: absolute;
@@ -540,6 +554,21 @@ span.DFD-3-span {
 	float: none;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.Tracking-span {
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 1.2em;
+	padding: 3px 2px;
+	border: 2px solid #000;
+	border-top: 0;
+	border-radius: 0 0 10px 10px;
+}
+
+.Tracking-span span {
+	font-weight: bold;
 }
 /*****Footer page*****/
 footer {
@@ -591,6 +620,12 @@ footer div {
 @media (max-width: 347px) {
 	footer {
 		 font-size: 0.85em;
+	}
+}
+
+@media (max-width: 428px) {
+	.Tracking-span {
+		font-size: 0.8em;
 	}
 }
 
