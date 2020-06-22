@@ -1,9 +1,9 @@
 var newsArray =[
 	{//19
 		date: "June 2020",
-		startContent: 'Put Ai to work - IBM event:',
-		linkTo: '#',
-		linkName: 'Video-AI.',
+		startContent: 'Put AI to work - IBM event:',
+		linkTo: 'https://video.ibm.com/recorded/126911742',
+		linkName: 'Video AI & Advanced Text Recognition.',
 		continueContent: ''
 	},
 	{//18

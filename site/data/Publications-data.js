@@ -1,4 +1,15 @@
 var publicationsArray = [
+	{//38
+		namesBeforeRami: "E.Amrani,",
+		RamiBenAri: "Rami Ben-Ari,",
+		namesAfterRami: "Inbar Shapira, Tal Hakim and A. Bornstein",
+		title: "Self-Supervised Object Detection and Retrieval Using Unlabeled Videos,",
+		linkTo: "http://openaccess.thecvf.com/content_CVPRW_2020/papers/w56/Amrani_Self-Supervised_Object_Detection_and_Retrieval_Using_Unlabeled_Videos_CVPRW_2020_paper.pdf",
+		linkName: "CVPR Workshop on Multimodal Learning, 2020",
+		achievement: "",
+		imageSource: "CVPRW2020.jpg",
+		abstractContent: "Learning an object detection or retrieval system requires a large data set with manual annotations. Such data are expensive and time-consuming to create and therefore difficult to obtain on a large scale. In this work, we propose using the natural correlation in narrations and the visual presence of objects in video to learn an object detector and retriever without any manual labeling involved. We pose the problem as weakly supervised learning with noisy labels, and propose a novel object detection and retrieval paradigm under these constraints. We handle the background rejection by using contrastive samples and confront the high level of label noise with a new clustering score. Our evaluation is based on a set of ten objects with manual ground truth annotation in almost 5000 frames extracted from instructional videos from the web. We demonstrate superior results compared to state-of-the-art weaklysupervised approaches and report a strongly-labeled upper bound as well. While the focus of the paper is object detection and retrieval, the proposed methodology can be applied to a broader range of noisy weakly-supervised problems."
+	},
 	{//37
 		namesBeforeRami: "",
 		RamiBenAri: "Rami Ben-Ari,",
@@ -388,7 +399,7 @@ var publicationsArray = [
 		namesBeforeRami: "A. Rosen and",
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "",
-		title: "A Mathematical Modeling of Helicopter Track and Balance – Theory, Journal of Sound and Vibration, vol. 200(5), pp. 589-603, 1997.",
+		title: "A Mathematical Modeling of Helicopter Track and Balance &ndash; Theory, Journal of Sound and Vibration, vol. 200(5), pp. 589-603, 1997.",
 		linkTo: "",
 		linkName: "",
 		achievement: "",
@@ -399,7 +410,7 @@ var publicationsArray = [
 		namesBeforeRami: "",
 		RamiBenAri: "Rami Ben-Ari",
 		namesAfterRami: "and A. Rosen",
-		title: "A Mathematical Modeling of Helicopter Track and Balance – Results, Journal of Sound and Vibration, vol. 200(5), pp. 605-620, 1997.",
+		title: "A Mathematical Modeling of Helicopter Track and Balance &ndash; Results, Journal of Sound and Vibration, vol. 200(5), pp. 605-620, 1997.",
 		linkTo: "",
 		linkName: "",
 		achievement: "",

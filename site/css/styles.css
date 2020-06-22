@@ -330,7 +330,8 @@ a:hover, a:active {
 
 #publication-achievement {
 	font-weight: 600;
-	color: #009933;
+	/*color: #009933;*/
+	color: #b32d00;
 }
 
 #publication-content-row {
